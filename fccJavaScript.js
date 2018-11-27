@@ -140,3 +140,49 @@ console.log(orderMyLogic(7));
 console.log(orderMyLogic(12));
 
 //#16: Chaining if else statements
+function testSize(val){
+  if (val < 5){
+    return "Tiny";
+  }
+  else if (val < 10){
+    return "Small";
+  }
+  else if (val < 15){
+    return "Medium";
+  }
+  else if (val < 20){
+    return "Large";
+  }
+  else{
+  return "Huge";
+}
+}
+console.log(testSize(1));
+console.log(testSize(8));
+console.log(testSize(13));
+console.log(testSize(16));
+console.log(testSize(75));
+
+//#17: Golf Code:
+function golfScore(par, strokes){
+  if (strokes ==1){
+    return "Hole-in-one!";
+  }
+  if (strokes <= par -2){
+    return "Eagle";
+  }
+  if (strokes == par -1){
+    return "Birdie";
+  }
+  if (strokes == par){
+    return "Par";
+  }
+  if (strokes == par +1){
+    return "Bogey";
+  }
+  if (strokes == par + 2){
+    return "Double Bogey";
+  }
+  return "Go Home!";
+}
+console.log(golfScore(5,4));
