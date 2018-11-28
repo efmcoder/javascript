@@ -325,3 +325,27 @@ console.log(chainToSwitch(42));
 console.log(chainToSwitch("bob"));
 
 //#22: Returning Boolean Values from Functions
+function isEqual(a,b) {
+  if (a === b) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+console.log(isEqual(1,2));
+console.log(isEqual(1,1));
+
+//#22 ALTERNATIVE - PART II
+function isEqual2(a,b) {
+  return a === b;
+}
+console.log(isEqual2(3,3));
+console.log(isEqual2(2,2));
+
+//#22: Challenge
+console.log("Number 22 Challenge");
+function isLess(a, b) {
+  return a !== b;
+}
+console.log(isLess(10, 10));
