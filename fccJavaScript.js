@@ -193,16 +193,17 @@ function caseInSwitch(val){
   switch (val){
     case 1:
     return "alpha";
-    break:
+    break;
     case 2:
     return "beta";
-    break:
+    break;
     case 3:
     return "gamma";
-    break:
+    break;
     case 4:
     return "delta";
-    break:
+    break;
   }
-  console.log(return answer):
+  return answer;
 }
+  console.log(caseInSwitch(1));
