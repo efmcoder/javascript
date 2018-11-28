@@ -349,3 +349,25 @@ function isLess(a, b) {
   return a !== b;
 }
 console.log(isLess(10, 10));
+
+//#23 Return Early Pattern for Functions
+console.log("#23: Return for Functions");
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("Goodbye");
+}
+console.log(myFun());
+//The above prints out Hello and World to the console, but not Goodbye because the function exits at the return statement
+console.log("#23 PART II");
+function abTest(a, b) {
+if (a < 0 || b < 0) {
+  return;
+}
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+console.log(abTest(2,2));
+console.log(abTest(-2,2));
+console.log(abTest(2,-2));
+console.log(abTest(2,8));
+console.log(abTest(3,3));
