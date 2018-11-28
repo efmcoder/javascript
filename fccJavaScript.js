@@ -189,7 +189,7 @@ console.log(golfScore(5,4));
 
 //#18: Switch Statements
 function caseInSwitch(val){
-  var answer = "";
+  var answer = ""; //without this, answer still executes
   switch (val){
     case 1:
     return "alpha";
@@ -207,3 +207,33 @@ function caseInSwitch(val){
   return answer;
 }
   console.log(caseInSwitch(1));
+
+//#19: Adding a default option in Switch statements
+function caseInSwitch2(val){
+  var answer2 = "";
+  switch (val){
+    case 1:
+    return "Alpha2";
+    break;
+    case 2:
+    return "Beta2";
+    break;
+    case 3:
+    return "Gamma2";
+    break;
+    case 4:
+    return "Delta2";
+    break;
+    default:
+    return "Not found";
+    break;
+  }
+  return answer2;
+}
+console.log(caseInSwitch2(0));
+console.log(caseInSwitch2(1));
+console.log(caseInSwitch2(2));
+console.log(caseInSwitch2(3));
+console.log(caseInSwitch2(4));
+console.log(caseInSwitch2(5));
+console.log(caseInSwitch2(100));
