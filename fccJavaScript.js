@@ -237,3 +237,91 @@ console.log(caseInSwitch2(3));
 console.log(caseInSwitch2(4));
 console.log(caseInSwitch2(5));
 console.log(caseInSwitch2(100));
+
+//#19: PART II:
+function switchOfStuff(val){
+  var answer = "";
+  switch (val){
+    case "a": //must use "a" or will error out as not defined
+    answer = "apple";
+    break;
+    case "b":
+    answer = "bird";
+    break;
+    case "c":
+    answer = "cat";
+    break;
+    default:
+    answer = "stuff";
+    break;
+  }
+  return answer;
+}
+console.log(switchOfStuff("a"));
+
+//#20: Basic JS: Multiple Identical Options in Switch statements
+function sequentialSizes(val){
+  var answer = " ";
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      return "Low";
+      break;
+
+      case 4:
+      case 5:
+      case 6:
+        return "Mid";
+        break;
+
+        case 7:
+        case 8:
+        case 9:
+          return "High";
+          break;
+
+          default:
+          return "U too fat!";
+          break;
+
+        }
+        return answer;
+}
+console.log(sequentialSizes(1));
+console.log(sequentialSizes(6));
+console.log(sequentialSizes(9));
+console.log(sequentialSizes(10));
+
+//#21: Replace If Else Chains with Switch
+function chainToSwitch(val){
+  var answer = "";
+  switch (val){
+    case "bob":
+    return "Marley";
+    break;
+
+    case 42:
+    return "The Answer";
+    break;
+
+    case 1:
+    return "There is no #1";
+    break;
+
+    case 99:
+    return "Missed me by this much!";
+    break;
+
+    case 7:
+    return "Ate Nine";
+    break;
+
+  }
+  return answer;
+}
+console.log(chainToSwitch(7));
+console.log(chainToSwitch(42));
+console.log(chainToSwitch("bob"));
+
+//#22: Returning Boolean Values from Functions
