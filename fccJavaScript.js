@@ -371,3 +371,36 @@ console.log(abTest(-2,2));
 console.log(abTest(2,-2));
 console.log(abTest(2,8));
 console.log(abTest(3,3));
+
+//#24: Card Counting
+console.log("#24: Card Counting");
+var count = 0;
+function cc(card){
+  switch(card){
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    count++;
+    break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+    count--;
+    break;
+  }
+  if (count > 0) {
+    return count + " Bet";
+  } else {
+    return count + " Hold";
+}
+}
+console.log(cc(-3));
+console.log(cc(5));
+console.log(cc(7));
+
+//#25: JavaScript Objects
+console.log("#25: JavaScript Objects");
