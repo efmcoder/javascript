@@ -437,6 +437,7 @@ var myDog = "Hunter"; //these lines need to be down here because, scope
 var myBreed = dogs[myDog];
 console.log(myBreed);
 //console.log(someObj[someProperty]);
+
 var testObj = {
   12: "Namath",
   16: "Montana",
@@ -446,3 +447,100 @@ var testObj = {
 var playerNumber = 12;
 var player = testObj[playerNumber];
 console.log(player);
+
+//#28: Updating Object Properties
+console.log("#28: Updating Object Properties");
+var ourDog = {
+  name: "Camper",
+  legs: 3,
+  tails: 1,
+  friends: ["people", "cats", "dolls"]
+};
+//update his name to Happy Camper
+ourDog.name = "Happy Camper";
+console.log(ourDog.name);
+
+//#29: Add properties to a JS Object
+console.log("#29: Add properties to a JS Object");
+ourDog.bark = "bow-wow";
+console.log(ourDog.bark);
+
+//#30: Delete properties from JS Object
+console.log("#30: Delete properties from JS Object");
+delete ourDog.bark;
+
+//MISC
+console.log("# Misc");
+var city = {
+  name: "Cranston",
+  village: "Pawtuxet",
+  representative: "Langevin",
+  county: "Providence",
+  avgHomeValue: 250000,
+  population: 800000
+};
+city.myStreet = "Smith"; //adds name of street to object
+console.log(city.myStreet); //street name
+var myVillage = "village";
+var myLocation = city[myVillage];
+console.log(myLocation); //village name
+
+//#31: Using Objects for Lookups
+console.log("#31: Using Objects for Lookups");
+//function phoneticLookup(val){ this line is on FCC but can't get results if I use it here ??
+var lookup = {
+  alpha: "Adams",
+  bravo: "Boston",
+  charlie: "Chicago",
+  delta: "Denver",
+  echo: "Easy",
+  foxtrot: "Frank"
+};
+
+var myTown = "bravo";
+var town = lookup[myTown];
+console.log(town);
+//result = lookup[val]; // from FCC but can't get results when i use it here ??
+//}
+
+//#32: Testing Objects for Properties
+console.log("#32: Testing Objects for Properties");
+var myObj = {
+  top: "hat",
+  bottom: "pants",
+};
+console.log(myObj.hasOwnProperty("top")); //hasOwnProperty must be in the library
+
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+/*console.log(myObj.hasOwnProperty("door"));
+function checkObj(checkProp){
+  console.log(myObj.hasOwnProperty("pet"));
+  return "Change me!";
+}
+checkObj("gift");
+console.log(checkObj("pet"));
+console.log(checkObj("bed"));*/
+
+function checkObj(checkProp) {
+  if (myObj.hasOwnProperty(checkProp) == true) {
+    return myObj[checkProp];
+  }
+  else {
+    return "Not found";
+  }
+}
+console.log(checkObj("bed"));
+console.log(checkObj("table"));
+
+//#33: JS: Manipulating Complex Objects
+console.log("#33: JS: Manipulating Complex Objects");
+var ourMusic = {
+  artist: "Daft Punk",
+  title: "Homework",
+  release_year: 1997,
+  formats: ["CD", "Casette", "LP"]
+};
