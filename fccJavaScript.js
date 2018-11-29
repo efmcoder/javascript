@@ -544,3 +544,19 @@ var ourMusic = {
   release_year: 1997,
   formats: ["CD", "Casette", "LP"]
 };
+console.log(ourMusic.artist);
+
+//#34: Accessing Nested Objects
+console.log("#34: Accessing Nested Objects");
+var ourStorage = {
+desk: {"drawer": "stapler"},
+cabinet:{"top drawer":
+    {
+      folder1: "a file",
+      folder2: "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+console.log(ourStorage.cabinet["top drawer"].folder2);
+console.log(ourStorage.desk.drawer);
