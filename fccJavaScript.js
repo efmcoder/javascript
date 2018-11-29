@@ -404,3 +404,45 @@ console.log(cc(7));
 
 //#25: JavaScript Objects
 console.log("#25: JavaScript Objects");
+var cat = {
+  name: "Whiskers",
+  legs: 4,
+  tails: 1,
+  enemies: ["Water", "Dogs"]
+};
+console.log(cat.name);
+console.log(cat.legs);
+console.log(cat.tails);
+console.log(cat.enemies);
+
+var dog = {
+  name: "Woof",
+  legs: 3,
+  tails: 1,
+  friends: "man"
+};
+console.log(dog.name);
+
+//#26: Accessing Object Properties with Dot Notation
+console.log("#26: Accessing Object Properties with Dot Notation");
+
+//#27: Accessing Object properties with Variables
+console.log("#27: Accessing Object properties with Variables");
+var dogs = {
+  Fido: "Mutt",
+  Hunter: "Doberman",
+  Snoopie: "Beagle"
+};
+var myDog = "Hunter"; //these lines need to be down here because, scope
+var myBreed = dogs[myDog];
+console.log(myBreed);
+//console.log(someObj[someProperty]);
+var testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+//Variables below, need to be below the object because - scope
+var playerNumber = 12;
+var player = testObj[playerNumber];
+console.log(player);
