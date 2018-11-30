@@ -695,4 +695,80 @@ for (var j = 1; j < 10; j+=2) {
   console.log(j);
 }
 
-//#40
+//#40 Count Backwards with a For Loop
+console.log("#40 Count Backwards with a For Loop");
+for (var i = 10; i > 0; i--) {
+  console.log(i);
+}
+
+console.log("#40 Count Backwards with a For Loop EVEN numbers");
+for (var i = 10; i > 0; i-=2) {
+  console.log(i);
+}
+
+console.log("#40 Count Backwards with a For Loop ODD numbers");
+for (var i = 9; i > 0; i-=2) {
+  console.log(i);
+}
+
+console.log("MISC: CREATE PYRAMID WITH A LOOP");
+function createPyramid() {
+  var rows = 5;
+  var arr = new Array();
+  for (var i = 1; i <= rows; i++) {
+    for (var j = 1; j <=i; j++) {
+      arr.push(j);
+      console.log(j);
+    }
+    console.log("\n");
+  }
+  console.log(createPyramid);
+}
+
+var num = "";
+var size = 5;
+for(var i=1; i<=size; i++) {
+  num = num + i
+  console.log(num);
+}
+
+console.log("STILL NOT A PYRAMID!")
+function generatePyramid(num) {
+  let number = '';
+
+  for (let i = 1; i <= num; i++) {
+    console.log(number += i);
+  }
+}
+console.log(generatePyramid(10));
+
+console.log("Pyramid, anyone?");
+for(var i=1; i<=5; i++){
+ var Num='';
+ for(var j=0; j<i; j++){
+     Num += i;
+ }
+ console.log(Num);
+}
+
+console.log("Better luck with that pyramid?");
+var n = 10;
+generateNumberTriangle(n);
+
+function generateNumberTriangle(n) {
+    var width = (2 * n) -1; // Always the case.
+    var midpoint = Math.floor(width / 2); // Middle of pyramid.
+    let level = ''; // will be reset each level loop
+
+    for(var i = 0; i < n; i++){ // Looping through levels
+        level = '';
+        for(var j = 0; j < width; j++){
+            if(j < midpoint-i || j > midpoint+i){
+                level += '.';
+            } else {
+                level += '*';
+            }
+        }
+        console.log(level);
+    }
+}
