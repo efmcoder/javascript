@@ -772,3 +772,28 @@ function generateNumberTriangle(n) {
         console.log(level);
     }
 }
+
+//CHANGE: THIS IS ACTUALLY #98 ON FCC
+console.log("#98: THIS IS #98 ON FREE CODE CAMP: ITERATE THROUGH AN ARRAY WITH A FOR LOOP");
+var arr = [10,9,8,7,6];
+for (var i = 0; i < arr.length; i++){
+  console.log(arr[i]);
+}
+//PS: Last index in an array is length-1.
+
+console.log("#98");
+var myArr = [2,3,4,5,60];
+var total = 0;
+for (var i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+  console.log(total);
+}
+
+//#99: Nesting for loops. This will print out the numbers individually
+console.log("#99: Nesting for loops");
+var arr = [ [1,2], [3,4], [5,6]];
+for (var i = 0; i < arr.length; i++) {
+  for (var j = 0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
+}
