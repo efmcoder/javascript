@@ -582,3 +582,18 @@ console.log(myHouse.heat);
 console.log(myHouse.amenities.in_law.bedrooms);
 var inLawRooms = myHouse.amenities.in_law.bedrooms;
 console.log("I have " + inLawRooms + " in-law bedrooms at my house");
+
+console.log("fcc access nested object & use brackets");
+var myStorage = {
+  car: {
+    inside: {
+      "glove box": "maps", //when there's a space, better to use " "
+      "passenger seat": "crumbs"
+    },
+    outside: {
+      "trunk": "jack" //prob better to use " " when nest within a nest
+    }
+  }
+};
+var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
