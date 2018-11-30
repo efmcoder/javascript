@@ -577,3 +577,8 @@ var myHouse = {
 },
 other: "pool"}};
 console.log(myHouse.amenities.in_law.ceiling);
+console.log(myHouse.floorLevels);
+console.log(myHouse.heat);
+console.log(myHouse.amenities.in_law.bedrooms);
+var inLawRooms = myHouse.amenities.in_law.bedrooms;
+console.log("I have " + inLawRooms + " in-law bedrooms at my house");
