@@ -676,3 +676,23 @@ while (i <= 5) {
   console.log(i);
 }
 //prints  to 6 because of the push which adds 1
+
+//#38: Iterate with JavaScript For Loops
+console.log("#38: Iterate with JavaScript For Loops");
+for (var i = 0; i <= 10; i++) {
+  console.log(i);
+}
+
+//#39: Iterate EVEN numbers with a For loop
+console.log("#39: Iterate EVEN numbers with a For loop");
+for (var i = 0; i < 10; i+=2) {
+  console.log(i);
+}
+
+//#39 PART II: Odd Numbers
+console.log("#39 PART II: Odd Numbers");
+for (var j = 1; j < 10; j+=2) {
+  console.log(j);
+}
+
+//#40
