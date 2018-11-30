@@ -666,3 +666,13 @@ function updateRecords(id, prop, value) {
   return collection;
 }
 console.log(collection);
+
+//#37: Iterate with JavaScript While Loops
+console.log("#37: Iterate with JavaScript While Loops");
+var ourArray = [];
+var i = 0;
+while (i <= 5) {
+  ourArray.push(i), i++;
+  console.log(i);
+}
+//prints  to 6 because of the push which adds 1
