@@ -560,3 +560,20 @@ cabinet:{"top drawer":
 };
 console.log(ourStorage.cabinet["top drawer"].folder2);
 console.log(ourStorage.desk.drawer);
+
+console.log("own example of nested objects and access");
+var myHouse = {
+  floorLevels: 2,
+  flooring: "hardwoods",
+  heat: "electric",
+  washer_dryer: "gas",
+  amenities: {
+  porch1: "front porch",
+  porch2: "back porch",
+  fireplace: "unknown",
+  in_law:{
+  bedrooms: 2,
+  ceiling: "gabled"
+},
+other: "pool"}};
+console.log(myHouse.amenities.in_law.ceiling);
