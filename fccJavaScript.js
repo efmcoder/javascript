@@ -1,3 +1,4 @@
+/*
 //#1: Return
 function timesFive(num){
   return num * 5;
@@ -524,7 +525,7 @@ function checkObj(checkProp){
 checkObj("gift");
 console.log(checkObj("pet"));
 console.log(checkObj("bed"));*/
-
+/*
 function checkObj(checkProp) {
   if (myObj.hasOwnProperty(checkProp) == true) {
     return myObj[checkProp];
@@ -772,6 +773,7 @@ function generateNumberTriangle(n) {
         console.log(level);
     }
 }
+*/
 
 //CHANGE: THIS IS ACTUALLY #98 ON FCC
 console.log("#98: THIS IS #98 ON FREE CODE CAMP: ITERATE THROUGH AN ARRAY WITH A FOR LOOP");
@@ -783,7 +785,7 @@ for (var i = 0; i < arr.length; i++){
 
 console.log("#98");
 var myArr = [2,3,4,5,60];
-var total = 0;
+var total = 10;
 for (var i = 0; i < myArr.length; i++) {
   total += myArr[i];
   console.log(total);
@@ -797,3 +799,11 @@ for (var i = 0; i < arr.length; i++) {
     console.log(arr[i][j]);
   }
 }
+//#100: Iterate with JavaScript Do-While Loops
+console.log("#100: Iterate with JavaScript Do-While Loops");
+var ourArray = [];
+var i = 0;
+do {
+  ourArray.push(i); i++;
+} while (i < 5);
+console.log(ourArray);
