@@ -825,3 +825,80 @@ do {
   i++;
 } while (i < 5);
 console.log(ourArray);
+
+//101: REDO!
+console.log("101: REDO!");
+//Setup
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+
+function lookUpProfile(name, prop){
+// Only change code below this line
+for (var x = 0; x < contacts.length; x++){
+    if (contacts[x].firstName === name) {
+        if (contacts[x].hasOwnProperty(prop)) {
+            return contacts[x][prop];
+        } else {
+            return "No such property";
+        }
+    }
+} console.log(lookUpProfile(firstName, "Kristian"));
+}
+
+//#102: Generate Random Franctions with JavaScript
+console.log("#102: Generate Random Franctions with JavaScript");
+// Math.random() can generate 0. We don't want to return a 0,
+// so keep generating random numbers until we get one that isn't 0
+function randomFraction() {
+var result = 0;
+    while (result === 0) {
+    result = Math.random();
+  }
+  return result;
+console.log(result);
+}
+
+//more random
+var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+function randomWholeNum() {
+var result = 0;
+    while (result === 0) {
+    result = Math.floor(Math.random() * 10);
+  }
+  return result;
+console.log(result);
+}
+
+
+//random min max THIS WORKS!
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+// Change this line
+}
+var myRandom = randomRange(5,15);
+console.log(myRandom);
