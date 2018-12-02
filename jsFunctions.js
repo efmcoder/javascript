@@ -40,3 +40,20 @@ var sum  = function (){
   return result;
 }
 console.log(sum(1,2,3,4,5)); //to infinity but impractical
+
+console.log("better way to do more than 1 paramenter");
+var sum  = function (...args){ //...args is a REST parameter
+  result = 0;
+  for (i = 0; i < arguments.length; i++) {
+    result += args[i];
+  }
+  return result;
+}
+console.log(sum(3,4,5)); //to infinity but impractical
+
+console.log("Unnamed Functions - IIFE - Immediately Invoked Funtion Expressions");
+(function () {
+  var message = "I don't have a name";
+  console.log(message);
+})
+();
