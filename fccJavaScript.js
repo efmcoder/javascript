@@ -773,7 +773,7 @@ function generateNumberTriangle(n) {
         console.log(level);
     }
 }
-*/
+
 
 //CHANGE: THIS IS ACTUALLY #98 ON FCC
 console.log("#98: THIS IS #98 ON FREE CODE CAMP: ITERATE THROUGH AN ARRAY WITH A FOR LOOP");
@@ -801,9 +801,27 @@ for (var i = 0; i < arr.length; i++) {
 }
 //#100: Iterate with JavaScript Do-While Loops
 console.log("#100: Iterate with JavaScript Do-While Loops");
+//not getting what i want from code below
+var i, j;
+for (i = 1; i < 5; i++) {
+  for (j = 1; j <= i; j++) {
+    console.log("*");
+}
+    console.log("\n");
+}*/
+//this prints out [0,1,2,3,4]
 var ourArray = [];
 var i = 0;
 do {
-  ourArray.push(i); i++;
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+console.log(ourArray);
+//this prints out [5] only thing changed from above is that i is initialized to be equal to 5
+var ourArray = [];
+var i = 5;
+do {
+  ourArray.push(i);
+  i++;
 } while (i < 5);
 console.log(ourArray);
