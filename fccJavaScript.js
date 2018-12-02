@@ -898,7 +898,69 @@ console.log(result);
 //random min max THIS WORKS!
 function randomRange(myMin, myMax) {
   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
-// Change this line
 }
 var myRandom = randomRange(5,15);
 console.log(myRandom);
+
+//#105
+console.log("#105: Use the parseInt Function");
+function convertToInteger(str) {
+  return parseInt(007);
+}
+console.log(convertToInteger(007));
+
+//#106
+console.log("#106: Use the parseInt Function with a Radix");
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+console.log(convertToInteger("10011"));
+
+//#107
+console.log("#107: Use the Conditional (Ternary) Operator");
+console.log("example");
+function findGreater(a, b) {
+  if (a < b) {
+    return "a is greater";
+  } else {
+    return "b is greater";
+  }
+}
+console.log(findGreater(5, 7));
+
+console.log("rewrite above using conditional operator");
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater";
+}
+console.log(findGreater(5, 7));
+
+function checkEqual(a, b) {
+  return a === b ? true : false ;
+}
+
+console.log(checkEqual(1, 2));
+
+//#108
+console.log("#108: Multiple Conditional Ternary Operators");
+function findGreaterOrEqual(a, b){
+  if (a === b) {
+    return "a and b are equal";
+  } else if (a > b) {
+    return "a is greater";
+  } else {
+    return "b is greater";
+}
+}
+console.log(findGreaterOrEqual(5,6));
+
+//#108 Conditional
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
+}
+console.log(findGreaterOrEqual(5,6));
+function checkSign(num) {
+return num > 0 ? "positive" :
+    num < 0 ? "negative" :
+    "zero";
+}
+console.log(checkSign(10));
