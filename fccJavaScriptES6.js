@@ -236,15 +236,14 @@ const AVG_TEMPERATURES = {
 
 function getTempOfTmrw(avgTemperatures) {
   "use strict";
-  // change code below this line
   const { tomorrow: tempOfTomorrow } = avgTemperatures;
-  // change code above this line
   return tempOfTomorrow;
 }
 
 console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
 */
 
+/*
 console.log("#13: Destructuring assignment to assign variables from nested objects");
 //example
 const a = {
@@ -253,3 +252,60 @@ const a = {
 };
 const {start: {x: startX, y:startY}} = a;
 console.log(startX, startY);
+
+//problem & solution
+const LOCAL_FORECAST = {
+  today: { min: 72, max: 83 },
+  tomorrow: { min: 73.3, max: 84.6 }
+};
+function getMaxOfTmrw(forecast) {
+  "use strict";
+  // change code below this line
+  //const maxOfTomorrow = undefined; // change this line
+ const { tomorrow: { max: maxOfTomorrow } } = forecast;
+  // change code above this line
+  return maxOfTomorrow;
+}
+console.log(getMaxOfTmrw(LOCAL_FORECAST)); // should be 84.6
+*/
+
+/*
+console.log("#14: Use destructuring assignment to assign variables from Arrays");
+const [a, b] = [1, 2, 3, 4, 5, 6];
+console.log(a, b);
+//a is assigned the first value, b is assigned the second
+//answer is 1, 2
+*/
+
+/*
+//access the value at any index wt Destructuring
+const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+console.log(a, b, c);
+//answer is 1, 2, 5
+//just use commas?
+
+// QUESTION:
+//use destructuring assignment to swap the values
+//of a and b so that a receives the value stored
+//in b and b receives the value stored in a:
+let a = 8, b = 6;
+(() => {
+  "use strict";
+[b,a] = [a,b];
+})();
+console.log(a);
+*/
+
+console.log("#15: Use destructuring assignment with the Rest operator to reassign array elements");
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+  "use strict";
+  // change code below this line
+  //arr = list; // change this
+    const [a, b, ...arr] = list; //solution line
+  // change code above this line
+  return arr;
+}
+const arr = removeFirstTwo(source);
+console.log(removeFirstTwo(source));
+//answer: [3, 4, 5, 6, 7, 8, 9, 10]
