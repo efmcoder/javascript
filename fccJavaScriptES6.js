@@ -172,3 +172,75 @@ function sum(...args)
 }
 console.log(sum(1, 2, 3));
 */
+
+/*
+console.log("#11: The spread operator - Adding arrays the hard way");
+function addNumber(a,b,c) {
+  console.log(a+b+c);
+}
+var nums = [3,4,5];
+addNumber(nums[0], nums[1], nums[2]);
+
+console.log("Now use the spread operator to make above code simpler and easier");
+//what you do is use three dots, then the name of the array as follows:
+// addNumber(...nums);
+//and remove the formula that is adding up the array numbers
+function addNumber(a,b,c) {
+  console.log(a+b+c);
+}
+var nums = [3,4,7];
+addNumber(...nums);
+//works great!
+
+//freecodecamp solution:
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2 = arr1;
+(function() {
+  "use strict";
+ () => [...arr1]; // change this line
+
+})();
+console.log(arr2);
+*/
+
+/*
+console.log("#12: Use Destructuring Assignment to Assign Variables from Objects");
+var alphabet = {x:3.6, y:7.4, z:6.54};
+//now using ES6 destructuring syntax:
+const {x, y, z} = alphabet;
+const {x:a, y:b, z:c} = alphabet;
+console.log(alphabet);
+
+//freecodecamp example
+
+const AVG_TEMPERATURES = {
+  today: 77.5,
+  tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperatures) {
+  "use strict";
+  // change code below this line
+  const tempOfTomorrow = undefined; // change this line
+  // change code above this line
+  return tempOfTomorrow;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
+
+//SOLUTION:
+const AVG_TEMPERATURES = {
+  today: 77.5,
+  tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperatures) {
+  "use strict";
+  // change code below this line
+  const { tomorrow: tempOfTomorrow } = avgTemperatures;
+  // change code above this line
+  return tempOfTomorrow;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
+*/
