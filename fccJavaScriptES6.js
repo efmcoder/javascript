@@ -244,3 +244,12 @@ function getTempOfTmrw(avgTemperatures) {
 
 console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
 */
+
+console.log("#13: Destructuring assignment to assign variables from nested objects");
+//example
+const a = {
+  start: {x:5, y:6},
+  end: {x:6, y: -9}
+};
+const {start: {x: startX, y:startY}} = a;
+console.log(startX, startY);
