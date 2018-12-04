@@ -465,3 +465,22 @@ temp = thermos.temperature; // 26 in C
 console.log("#23: Understand the difference btw import and require");
 //used as:
 //import {countItems} from "math_array-functions"
+
+console.log("#24: Use export to reuse code block");
+const capitalizeString = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+//export { capitalizeString}
+//export const foo = "bar";
+console.log(capitalizeString);
+
+/*
+Alternatively, if you would like to compact all your export statements into one line, you can take this approach:
+
+const capitalizeString = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+const foo = "bar";
+export { capitalizeString, foo }
+
+*/
