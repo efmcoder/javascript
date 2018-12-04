@@ -309,3 +309,88 @@ function removeFirstTwo(list) {
 const arr = removeFirstTwo(source);
 console.log(removeFirstTwo(source));
 //answer: [3, 4, 5, 6, 7, 8, 9, 10]
+
+/*
+console.log("#17: Use destructuring Assignment to pass an object as a function's parameters");
+
+const profileUpdate = (profileData) => {
+  const {name, age, nationality, location} = profileData;
+}
+//or
+const profileData ({name, age, nationality, location}) => {
+
+}*/
+
+console.log("#18: Create strings using template literals");
+const person  = {
+  name: "Zodiac Hasbro",
+  age: 56
+};
+
+const greeting = `Hello my name is ${person.name}! I am ${person.age} years old.`;
+console.log(greeting);
+
+/*
+//Problem:
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["id-blacklist", "no-dup-keys"]
+};
+function makeList(arr) {
+  "use strict";
+
+  // change code below this line
+  //const resultDisplayArray = null;
+  const resultDisplayArray = arr.map(item => `<li class="text-warning">${item}</li>`);
+  // change code above this line
+
+  return resultDisplayArray;
+}
+/**
+ * makeList(result.failure) should return:
+ * [ `<li class="text-warning">no-var</li>`,
+ *   `<li class="text-warning">var-on-top</li>`,
+ *   `<li class="text-warning">linebreak</li>` ]
+ **/
+//const resultDisplayArray = makeList(result.failure);
+
+console.log("#19: Write concise object literal declarations using simple fields");
+//Problem:
+const createPerson = (name, age, gender) => {
+  "use strict";
+  // change code below this line
+  return {
+    name,
+    age,
+    gender
+  };
+  // change code above this line
+};
+console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
+
+console.log("#20: Write Concise declarative functions with ES6");
+const person2 = {
+  name: "Taylor",
+  sayHello: function(){
+    return `Hello! My name is ${this.name}`;
+  }
+};
+
+//Above can be re-written as below. Remove function
+const person3 = {
+  name: "Taylor",
+  sayHello(){
+    return `Hello! My name is ${this.name}`;
+  }
+};
+
+console.log("#21: Use class syntax to define a constructor function");
+var SpaceShuttle = function(targetPlanet){
+  this.targetPlanet = targetPlanet;
+}
+var zeus = new SpaceShuttle("Jupiter");
+console.log(zeus);
+//Answer: SpaceShuttle {targetPlanet: 'Jupiter'}
+
+//Above can be re-written as follows using class
