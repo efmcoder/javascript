@@ -394,3 +394,74 @@ console.log(zeus);
 //Answer: SpaceShuttle {targetPlanet: 'Jupiter'}
 
 //Above can be re-written as follows using class
+class SpaceShuttle2 {
+  constructor(targetPlanet){
+    this.targetPlanet = targetPlanet;
+  }
+}
+const zeus2 = new SpaceShuttle2('Jupiter');
+console.log(zeus);
+//The class keyword declares a new function
+//Constructor added which would be invoked when new is called to create a new object
+
+//Problem:
+function makeClass() {
+  "use strict";
+  /* Alter code below this line */
+class Vegetable {
+    constructor(name){
+      this.name = name;
+    }
+  }
+  /* Alter code above this line */
+  return Vegetable;
+}
+const Vegetable = makeClass();
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // => should be 'carrot'
+
+console.log("#22: Getters and Setters to control access to an object");
+/*class Book {
+  constructor(author) {
+    this.author = author;
+  }
+  //getter
+  get writer(){
+    return this._author;
+  }
+  //setter
+  set writer(updatedAuthor){
+    this._author = updatedAuthor;
+  }
+}
+console.log(lol.writer);
+lol.writer = "wut";
+console.log(lol.writer);
+*/
+
+function makeClass() {
+  "use strict";
+  /* Alter code below this line */
+  class Thermostat{
+      constructor(farenheit){
+        this.farenheit = farenheit;
+      }
+      get temperature(){
+        return 5 / 9 * (this.farenheit - 32);
+      }
+      set temperature(celsius){
+        this.farenheit = celsius * 9.0 / 5 + 32;
+      }
+    }
+  /* Alter code above this line */
+  return Thermostat;
+}
+const Thermostat = makeClass();
+const thermos = new Thermostat(76); // setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in C
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in C
+
+console.log("#23: Understand the difference btw import and require");
+//used as:
+//import {countItems} from "math_array-functions"
