@@ -484,3 +484,21 @@ const foo = "bar";
 export { capitalizeString, foo }
 
 */
+
+/*
+console.log("#25: Use * to import everything from a file");
+//Example
+import * as myMathModule from "math_functions";
+myMathModule.add(2,3);
+myMathModule.subtract(5,3);
+
+//meaning:
+//import * as Your_file_name from
+//"file_path_goes_here"
+//Your_file_name.imported_function
+
+//Problem SOLUTION
+//import * as capitalize_strings from "capitalize_strings";
+*/
+
+console.log("#26: ")
