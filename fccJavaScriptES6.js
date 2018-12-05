@@ -500,5 +500,10 @@ myMathModule.subtract(5,3);
 //Problem SOLUTION
 //import * as capitalize_strings from "capitalize_strings";
 */
-
+/*
 console.log("#26: ")
+console.log("#27: Import a default file");
+"use strict";
+import subtract from "math_functions";
+subtract(7,4);
+*/
