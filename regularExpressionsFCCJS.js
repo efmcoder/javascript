@@ -26,3 +26,39 @@ let result = petRegex.test(petString);
 console.log(result);
 
 console.log("#5: ignore case while matching");
+//to search words that may or may not be capitalized
+//search both using a flag
+//there are other flags but the flag that ignores the case is i
+//append it to the regex as follows
+// /stringname/i SEE EXAMPLE BELOW
+//Problem
+let myString = "freeCodeCamp";
+let fccRegex = /FreeCodeCamp/i; // Change this line
+let result2 = fccRegex.test(myString);
+console.log(result2);
+
+console.log("#6: Extract Matches");
+//use .match() method
+//apply the method on a string and pass in the regex
+//inside the parentheses
+//EXAMPLE:
+var greeting = "Hello, World!".match(/Hello/);
+let ourStr = "Regular expressions";
+let ourRegex = /expressions/;
+let solution = ourStr.match(ourRegex);
+//console.log(solution);
+console.log(solution);
+
+//PROBLEM
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result3 = extractStr.match(codingRegex); // Change this line
+console.log(result3);
+
+console.log("#7: Find more than the first match");
+//use the g flag
+//PROBLEM
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/ig; // Change this line
+let result4 = twinkleStar; // Change this line
+console.log(result4);
