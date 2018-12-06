@@ -115,3 +115,36 @@ let quoteSample2 = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/ig; // Change this line
 let result5 = quoteSample2.match(alphabetRegex); // Change this line
 console.log(result5);
+
+console.log("#11:Match numbers and letters of the alphabet");
+//use the hypen ( - )
+//e.g., /[0-5]/ matches any number between and is inclusive
+//can also combine a range of letters and numbers in same character set
+//Example:
+
+let jennyStr = "Jenny8675309";
+let myRegex = /[a-z0-9]/ig;
+console.log(jennyStr.match(myRegex));
+
+//PROBLEM:
+//Create a single regex that matches a range of letters
+//between h and s and a range of numbers btw 2 and 6. Global and case insensitive
+let quoteSample3 = "Blueberry 3.141592653s are delicious.";
+let myRegex3 = /[h-s2-6]/ig; // Change this line
+let result6 = quoteSample3.match(myRegex3); // Change this line
+console.log(result6);
+
+console.log("#12: Match single characters not specified");
+//create a set of characters you don't want to match
+//these type are called negated character sets
+//to create such a set, u place a caret character ( ^ ) after the opening bracket
+//and before the characters u don't want to match
+//e.g., /[^aeiou]/gi matches all characters that are not a vowell.
+//even ! , . [ ] @ / and white space are all matched. Only vowels are not
+//PROBLEM:
+//create a single regex that matches all characters that are not a number or a vowel
+//include global and case insensitive flags
+let quoteSample4 = "3 blind mice.";
+let myRegex4 = /[^aeiou^0-9]/ig; // Change this line
+let result7 = quoteSample4.match(myRegex4); // Change this line
+console.log(result7);
