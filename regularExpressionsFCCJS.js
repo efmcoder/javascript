@@ -176,3 +176,5 @@ let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
 let chewieRegex = /Aa*/; // THIS IS STUPID. HOW R WE SUPPOSED TO KNOW NOT TO USE CASE INSENSITIVE?
 let result9 = chewieQuote.match(chewieRegex);
 console.log(result9);
+
+console.log("#15:Find characters with lazy matching");
