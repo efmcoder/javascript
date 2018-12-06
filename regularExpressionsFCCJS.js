@@ -62,3 +62,37 @@ let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/ig; // Change this line
 let result4 = twinkleStar; // Change this line
 console.log(result4);
+
+console.log("#8: Math anything with wildcard period . ");
+//wildcard character is the period " . "
+//to match hug, huh, hut and hum, use regex /hu./ to match all 4
+//EXAMPLE
+let humStr = "I'll hum a song";
+let hugStr = "Hug me a bear please";
+let huRegex = /hu./;
+console.log(humStr.match(huRegex));
+//console.log(hugStr.match(huRegex));
+
+console.log("#9: Match single character with multiple possibilities");
+//review:
+// /literal/ finds specific words
+// /./ wildcard
+//Also search with "character classes"
+//character classes, u place words inside ([ and ]) brackets
+//e.g., to match bag, big, bug and not bog, create the regex...
+// /b[aiu]g/  => the [aiu] is the character class that will only match the characters a, i or u
+//Example
+let bigStr = "big";
+let bagStr = "bag";
+let bugStr = "bug";
+let bogStr = "bog";
+let bgRegex = /b[aiu]g/;
+console.log(bigStr.match(bgRegex));
+console.log(bagStr.match(bgRegex));
+console.log(bugStr.match(bgRegex));
+console.log(bogStr.match(bgRegex));
+
+//PROBLEM:
+let quoteSample = "Beware of bugs in the above code. I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig;
+let solution = quoteSample.match(vowelRegex);
