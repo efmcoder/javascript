@@ -94,5 +94,6 @@ console.log(bogStr.match(bgRegex));
 
 //PROBLEM:
 let quoteSample = "Beware of bugs in the above code. I have only proved it correct, not tried it.";
-let vowelRegex = /[aeiou]/ig;
-let solution = quoteSample.match(vowelRegex);
+let vowelRegex = /[aeiou]/ig; //i is to ignore case, g is to use global search
+let solution2 = quoteSample.match(vowelRegex);
+console.log(solution2);
