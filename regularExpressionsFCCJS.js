@@ -97,3 +97,21 @@ let quoteSample = "Beware of bugs in the above code. I have only proved it corre
 let vowelRegex = /[aeiou]/ig; //i is to ignore case, g is to use global search
 let solution2 = quoteSample.match(vowelRegex);
 console.log(solution2);
+//issue with above is that to match a large # of characters, that's a lot of typing. So see below.
+
+console.log("#10: Match letters of the alphabet");
+//use a hypen character: -
+//example: to match lowercase a to e, use [a-e]
+let catStr = "cat";
+let batStr = "bat";
+let matStr = "mat";
+let bgRegexalphabet = /[a-e]at/;
+console.log(catStr.match(bgRegexalphabet));
+console.log(batStr.match(bgRegexalphabet));
+console.log(matStr.match(bgRegexalphabet));
+
+//PROBLEM:
+let quoteSample2 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig; // Change this line
+let result5 = quoteSample2.match(alphabetRegex); // Change this line
+console.log(result5);
