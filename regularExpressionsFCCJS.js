@@ -148,3 +148,31 @@ let quoteSample4 = "3 blind mice.";
 let myRegex4 = /[^aeiou^0-9]/ig; // Change this line
 let result7 = quoteSample4.match(myRegex4); // Change this line
 console.log(result7);
+
+console.log("#13: Match characters that occur one of more times");
+//U can use the + for this (but only searches/finds if the character repeats consecutively, not when it's all over the place)
+//e.g., /a+/g would find one match in abc and return a.
+//because of the +, it would also find a match in aabc and return aa
+//if checking string abab, it would find 2 matches and return ["a", "a"] because they r not in a row, there is another character between them.
+//PROBLEM:
+let difficultSpelling = "Mississippi";
+let myRegex5 = /s+/ig; // Change this line
+let result8 = difficultSpelling.match(myRegex5);
+console.log(result8);
+
+console.log("#14: Match characters that occur zero or more times");
+//character is the asterisk or star *
+//example:
+let soccerWord = "gooooooooal!";
+let gPhrase = "gut feeling";
+let oPhrase = "over the moon";
+let goRegex = /go*/;
+console.log(soccerWord.match(goRegex)); //returns ["goooooooo"]
+console.log(gPhrase.match(goRegex)); //returns ["g"]
+console.log(oPhrase.match(goRegex)); //returns null
+
+//problem:
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/; // THIS IS STUPID. HOW R WE SUPPOSED TO KNOW NOT TO USE CASE INSENSITIVE?
+let result9 = chewieQuote.match(chewieRegex);
+console.log(result9);
