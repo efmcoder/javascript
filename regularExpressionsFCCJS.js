@@ -191,3 +191,5 @@ let text = "<h1>Winter is coming</h1>";
 let myRegex6 = /<h1>?/; // Change this line
 let result10 = text.match(myRegex6);
 console.log(result10);
+
+console.log("#16: Find one or more criminals in a hunt");
