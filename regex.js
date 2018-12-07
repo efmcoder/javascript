@@ -17,11 +17,49 @@ console.log(regexStr3.test(string3));
 //Extract a matching word
 //use the word "match" instead of "test"
 //Extract "citizen"
-let string4 = "FreeCodeCamp Is Available For World CITIZENS";
-let regexStr4 = /citizen/i; //remember to ignore case
+//Please note: this finds only the first match, not subsequent matches
+let string4 = "FreeCodeCamp Is Available For World CITIZENs made by citizens";
+let regexStr4 = /citizen/i; 
 console.log(string4.match(regexStr4));
+//can find a singular in a plural word but not vice versa. 
+//will need an inexact match in order to find e.g citizens in citizen
 //you can simply log to the console or give the answer a variable as in next line and log that to console
 //let result4 = string4.match(regexStr4);
 //console.log(result4);
 
 
+//Find more than the first match
+//will find singular in the plural but not vice versa
+let string5 = "FreeCodeCamp (yeah!) Is AVAILABLE FOR WORLD CITIZENs made by citizens";
+let regexStr5 = /citizen/ig; //"g" will go GLOBAL. i is to remember to ignore case
+console.log(string5.match(regexStr5));
+
+
+//match anything - use wildcard character the period or dot " . "
+let string6 = "FreeCodeCamp (yeah!) Is AVAILABLE FOR WORLD CITIZENs made by citizens";
+let string6a = "The CIT group is worried about campaigns";
+let regexStr6 = /cit./ig; 
+console.log(string6.match(regexStr6));
+
+//MY FAV BELOW, CAN FIND ANYTHING!!!
+//match anything - bracket
+let string7 = "FreeCodeCamp (yeah!) Is AVAILABLE FOR WORLD CITIZENs made by citizens";
+let string7a = "The CIT group is worried about campaigns";
+let regexStr7 = /a[a-z]/ig;
+let regexStr7a = /w[a-z]/ig; 
+console.log(string7.match(regexStr7));
+console.log(string7a.match(regexStr7a));
+
+
+//match vowels only
+let string8 = "FreeCodeCamp (yeah!) Is AVAILABLE FOR WORLD CITIZENs made by citizens";
+let string8a = "The CIT group is worried about campaigns";
+let regexStr8 = /[!aeiou]/ig;
+let regexStr8a = /[!aeiou]/ig; 
+console.log(string8.match(regexStr8));
+console.log(string8a.match(regexStr8a));
+
+//match letters and numbers
+let string9 = "FreeCodeCamp5846549 Is AVAILABLE FOR WORLD CITIZENs made by citizens";
+let regexStr9 = /[a-z0-9]/ig; 
+console.log(string9.match(regexStr9));

@@ -63,7 +63,7 @@ let starRegex = /twinkle/ig; // Change this line
 let result4 = twinkleStar; // Change this line
 console.log(result4);
 
-console.log("#8: Math anything with wildcard period . ");
+console.log("#8: Match anything with wildcard period . ");
 //wildcard character is the period " . "
 //to match hug, huh, hut and hum, use regex /hu./ to match all 4
 //EXAMPLE
