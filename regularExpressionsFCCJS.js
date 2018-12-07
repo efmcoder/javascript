@@ -178,3 +178,16 @@ let result9 = chewieQuote.match(chewieRegex);
 console.log(result9);
 
 console.log("#15:Find characters with lazy matching");
+//a GREEDY match finds the longest possible part of a string that fits the regex parttern and returns it as a match
+//the alternative is called a lazy match
+//eg of a greedy match is /t[a-z]*i/ to titanic. Includes pretty much everything
+///t[a-z]*i/ returns "titani"
+//regular expressions r by default greedy
+//you can change it to a lazy match by adding ?
+//e.g /t[a-z]*?i - returns "ti"
+//PROBLEM:
+//Fit the regex /<.*>/ to return the HTML tag <h1> and not the text "<h1>Winter is coming</h1>". Remember the wildcard . (period or dot) matches any character
+let text = "<h1>Winter is coming</h1>";
+let myRegex6 = /<h1>?/; // Change this line
+let result10 = text.match(myRegex6);
+console.log(result10);
