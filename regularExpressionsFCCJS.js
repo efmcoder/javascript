@@ -222,3 +222,29 @@ console.log("#18: Match Ending Sting Patters dollar sign $");
 let theEnding = "This is a never ending story";
 let storyRegex = /story$/;
 console.log(storyRegex.test(theEnding));
+
+console.log("#19: Match all letters and numbers");
+// \w this set finds all. It is the same as [A-Za-z0-9_]
+//it matches upper case, lower case, numbers and underscore
+//these shortcut character classes r known as shorthand character classes
+let quoteSample5 = "The five boxing wizards jump quickly";
+let alphabetRegexV2 = /\w/ig;
+let result11 = quoteSample5.match(alphabetRegexV2).length;
+console.log(result11);
+
+console.log("#20: Match everything but letters and numbers");
+//search for the opposite of alphanumerics
+//search for the opposite of \w with \W
+//\W is the same as [^A-Za-z0-9_]
+//so looking for special characters not underscore
+
+let shortHand = /\W/;
+let numbers = "42%";
+let sentence = "Coding!";
+console.log(numbers.match(shortHand));
+
+//PROBLEM
+let quoteSample6 = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/ig;
+let result12 = quoteSample6.match(nonAlphabetRegex).length;
+console.log(result12);
