@@ -50,12 +50,12 @@ let regexStr7a = /w[a-z]/ig;
 console.log(string7.match(regexStr7));
 console.log(string7a.match(regexStr7a));
 
-
+//don't find vowels = use the caret ^ sign
 //match vowels only
 let string8 = "FreeCodeCamp (yeah!) Is AVAILABLE FOR WORLD CITIZENs made by citizens";
 let string8a = "The CIT group is worried about campaigns";
-let regexStr8 = /[!aeiou]/ig;
-let regexStr8a = /[!aeiou]/ig; 
+let regexStr8 = /[^aeiou]/ig; //don't find vowels
+let regexStr8a = /[!aeiou]/ig; //find vowels only
 console.log(string8.match(regexStr8));
 console.log(string8a.match(regexStr8a));
 
@@ -63,3 +63,20 @@ console.log(string8a.match(regexStr8a));
 let string9 = "FreeCodeCamp5846549 Is AVAILABLE FOR WORLD CITIZENs made by citizens";
 let regexStr9 = /[a-z0-9]/ig; 
 console.log(string9.match(regexStr9));
+
+//FCC Find a criminal problem
+//match characters that occur more than 1 time
+//U can use the + for this (but only searches/finds if the character repeats consecutively, not when it's all over the place)
+//e.g., /a+/g would find one match in abc and return a.
+//because of the +, it would also find a match in aabc and return aa
+//if checking string abab, it would find 2 matches and return ["a", "a"] because they r not in a row, there is another character between them.
+let string10 = "FCCamp5846549 Is AVAILABLE FOR WORLD CITIZENs made by citizens";
+let regexStr10 = /c+/ig; 
+console.log(string10.match(regexStr10));
+//results: CC, C, c
+
+let string10a = "FCCamp5846549 Is AVAILABLE FOR WORLD CITIZENs made by citizens";
+let regexStr10a = /[c+]/ig; 
+console.log(string10a.match(regexStr10a));
+//results: C, C, C, c
+
