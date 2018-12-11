@@ -193,3 +193,27 @@ let result10 = text.match(myRegex6);
 console.log(result10);
 
 console.log("#16: Find one or more criminals in a hunt");
+//the regex /z+/ matches z when it appears 1 or more
+//times in a row
+//write a greedy regex that finds 1 or more criminals
+//within a group of others
+//criminal is represented by letter case
+  let crowd = "P1CCP2CD68FGFPPCECC5S654F5C6545SC44654F5C41";
+  let reCriminals = /c+/ig;
+  let matchedCriminals = crowd.match(reCriminals);
+  console.log(matchedCriminals);
+
+console.log("#17: Match Beginning String Patters");
+//Caret ^ = used to not find something (negated string)
+//Caret ^ = also used to search for patterns at the
+//beginning of strings
+let firstString = "Who is first not Ricky can be found";
+let firstRegex = /^Ricky/; //returns true if Ricky is the first word in the string
+console.log(firstRegex.test(firstString));
+//returns false
+
+//Example II
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/;
+console.log(calRegex.test(rickyAndCal));
+//returns true
