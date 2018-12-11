@@ -217,3 +217,8 @@ let rickyAndCal = "Cal and Ricky both like racing.";
 let calRegex = /^Cal/;
 console.log(calRegex.test(rickyAndCal));
 //returns true
+
+console.log("#18: Match Ending Sting Patters dollar sign $");
+let theEnding = "This is a never ending story";
+let storyRegex = /story$/;
+console.log(storyRegex.test(theEnding));
