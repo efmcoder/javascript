@@ -340,17 +340,38 @@ let result24 = multipleAA.test(A7);
 console.log(result23);
 console.log(result24);
 
-console.log("Match word Hazzah only when it has 4 or more letter z's");
-let haStr = "Hazzzzah";
+console.log("Match word Hazzzah only when it has 4 or more letter z's");
+let haStr = "Hazzzah";
 let haRegex = /z{4,}/;
 let result25 = haRegex.test(haStr);
 console.log(result25);
 
 
-console.log("Word Hazzah now has only 3 letter z's");
+console.log("Word Hazzzah now has only 3 letter z's");
 let haStr2 = "Hazzzah";
-let haRegex2 = /z{4,}/;
+let haRegex2 = /z{3,}/;
 let result26 = haRegex2.test(haStr2);
 console.log(result26);
 
 console.log("#28: Specify exact number of matches");
+//specify only a specific number of matches
+//have that 1 number btw the curly brackets
+console.log("Word Hazzzah has 4 letter z's?");
+let haStr3 = "Hazzzah";
+let haRegex3 = /z{4}/; //does Hazzzah have 4 letter z's?
+let result27 = haRegex3.test(haStr3);
+console.log(result27);
+//should return false
+//^([A-Z]{3})$
+//The {3} indicates that the [A-Z] must appear exactly 3 times.
+//PROBLEM:
+//do not match Timber
+//do not match Timmber
+//do not match Timmmber
+//Match Timmmmber (with 4 m's)
+//do not match Timber with 30 m's
+console.log("#28 EXAMPLE");
+let timStr2 = "Timmmmber";
+let timRegex4 = /Tim{4}ber/; // Change this line
+let result28 = timRegex4.test(timStr2);
+console.log(result28);
