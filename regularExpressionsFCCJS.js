@@ -287,3 +287,34 @@ let sample7 = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/g;
 let result17 = sample7.match(countWhiteSpace);
 console.log(result17);
+
+console.log("#25: Match non-whitespace characters");
+//use \S
+//same as [^\r\t\f\n\v]
+let sample8 = "Whitespace is important in separating words";
+let countWhiteSpace2 = /\S/g;
+let result18 = sample8.match(countWhiteSpace2);
+console.log(result18);
+
+console.log("#26: Specify Upper and Lower number of matches");
+//use + to look for one or more characters
+//use * to look for zero or more characters
+//quantity specifiers: { and }
+//put 2 numbers btw the brackets
+//e.g., to match only the letter a appearing btw 3 and 5
+//times in the string "ah" the regex would be /a{3,5}h/
+
+let A4 = "aaaah";
+let A2 = "aah";
+let multipleA = /a{3,5}h/;
+let result19 = multipleA.test(A4);
+console.log(result19);
+//answer = true
+//PROBLEM
+let ohStr = "ohhh no";
+let ohRegex = /Oh{3,6}\sno/;
+let result20 = ohRegex.test(ohStr);
+console.log(result20);
+//answer = false
+
+console.log("#27: Specify only the lower number of matches");
