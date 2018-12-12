@@ -265,3 +265,25 @@ let result14 = numString2.match(numRegex2).length;
 console.log(result14);
 
 console.log("#23: Restrict possible Usernames");
+let userName = "JackOfAllTrades";
+let userCheck = /^[a-z]{2,}\d*$/i;//don't include:
+//starts with lowercase
+//2 digits or less
+//
+let result15 = userCheck.test(userName);
+console.log(result15);
+
+console.log("#24: Match Whitespace");
+//use \s
+//also matches carriage return, tab, form feed and new line
+//same as \r\t\f\n\v
+let whiteSpace = "Whitespace. Whitespace everywhere!";
+let spaceRegex = /\s/g;
+let result16 = whiteSpace.match(spaceRegex);
+console.log(result16);
+
+//PROBLEM:
+let sample7 = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g;
+let result17 = sample7.match(countWhiteSpace);
+console.log(result17);
