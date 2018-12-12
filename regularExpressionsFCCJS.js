@@ -248,3 +248,20 @@ let quoteSample6 = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W/ig;
 let result12 = quoteSample6.match(nonAlphabetRegex).length;
 console.log(result12);
+
+console.log("#21: Match all numbers");
+//look for just digits or numbers
+//use \d which is same as [0-9]
+let numString = "Your sandwich will be $5.00";
+let numRegex = /\d/ig;
+let result13 = numString.match(numRegex).length;
+console.log(result13);
+//returns 3 because there are 3 digits
+
+console.log("#22: Match all non-numbers");
+let numString2 = "Your sandwich will be $5.00";
+let numRegex2 = /\D/ig;
+let result14 = numString2.match(numRegex2).length;
+console.log(result14);
+
+console.log("#23: Restrict possible Usernames");
