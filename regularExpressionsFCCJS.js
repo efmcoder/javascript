@@ -318,3 +318,39 @@ console.log(result20);
 //answer = false
 
 console.log("#27: Specify only the lower number of matches");
+//keep first number followed by a comma
+let A5 = "aaaaah";
+let A3 = "aaah";
+let multipleAs = /a{3,}h/;
+let result21 = multipleAs.test(A4);
+console.log(result21);
+//answer = true
+//PROBLEM
+let ohStr2 = "ohhh no";
+let ohRegex2 = /Oh{3,}sno/;
+let result22 = ohRegex2.test(ohStr2);
+console.log(result22);
+
+let A6 = "haaaah";
+let A7 = "haah";
+let A100 = "h" + "a".repeat(100) + "h";
+let multipleAA = /ha{3,}h/;
+let result23 = multipleAA.test(A6);
+let result24 = multipleAA.test(A7);
+console.log(result23);
+console.log(result24);
+
+console.log("Match word Hazzah only when it has 4 or more letter z's");
+let haStr = "Hazzzzah";
+let haRegex = /z{4,}/;
+let result25 = haRegex.test(haStr);
+console.log(result25);
+
+
+console.log("Word Hazzah now has only 3 letter z's");
+let haStr2 = "Hazzzah";
+let haRegex2 = /z{4,}/;
+let result26 = haRegex2.test(haStr2);
+console.log(result26);
+
+console.log("#28: Specify exact number of matches");
