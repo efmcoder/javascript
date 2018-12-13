@@ -372,6 +372,17 @@ console.log(result27);
 //do not match Timber with 30 m's
 console.log("#28 EXAMPLE");
 let timStr2 = "Timmmmber";
-let timRegex4 = /Tim{4}ber/; // Change this line
+let timRegex4 = /Tim{4}ber/; // Spell Timber and put 4 after the m
 let result28 = timRegex4.test(timStr2);
 console.log(result28);
+
+console.log("#29: Check for all or none");
+let american = "color";
+let british = "colour";
+let rainbowRegex = /colou?r/; //? in front of the u as that is what we r questioning
+result29 = rainbowRegex.test(american);
+result30 = rainbowRegex.test(british);
+console.log(result29); //returns true
+console.log(result30); //returns true
+
+console.log("#30: Positive and Negative lookahead");
