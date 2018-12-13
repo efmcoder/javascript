@@ -384,5 +384,77 @@ result29 = rainbowRegex.test(american);
 result30 = rainbowRegex.test(british);
 console.log(result29); //returns true
 console.log(result30); //returns true
+console.log(british.match(rainbowRegex));
+console.log(american.match(rainbowRegex));
 
 console.log("#30: Positive and Negative lookahead");
+//lookaheads r patterns that tell JS to look ahead
+//in the string to check for patterns further along
+//useful for multiple patterns over the same string
+//2 kinds: positive and negative lookaheads
+//positive: looks to make sure the element is there but won't actually match it
+//positive is used as (?=...) where ...is the pattern u want to be there
+//negative looks to make sure element is NOT THERE
+//negative is used as (?!...) where ... is the pattern u don't want to be there
+
+let quit = "qu";
+let noQuit = "qt";
+let quRegex = /q(?=u)/;
+let noQRegex = /q(?!u)/;
+result31 = quRegex.test(quit);
+result32 = noQRegex.test(noQuit);
+result33 = quit.match(quRegex);
+result34 = noQuit.match(noQRegex);
+console.log(result31);
+console.log(result32);
+console.log(result33);
+console.log(result34);
+
+
+let betterNow = "You probably think that you are better now, better now
+You only say that 'cause I'm not around, not around
+You know I never meant to let you down, let you down
+Woulda gave you anything, woulda gave you everything
+You know I say that I am better now, better now
+I only say that 'cause you're not around, not around
+You know I never meant to let you down, let you down
+Woulda gave you anything, woulda gave you everything (oh wow)
+I did not believe that it would end, no
+Everything came second to the Benzo
+You're not even speaking to my friends, no
+You knew all my uncles and my aunts though
+Twenty candles, blow 'em out and open your eyes
+We were looking forward to the rest of our lives
+Used to keep my picture posted by your bedside
+Now it's in your dresser with the socks you don't like
+And I'm rollin', rollin', rollin', rollin'
+With my brothers like it's Jonas, Jonas
+Drinkin' Henny and I'm tryna forget
+But I can't get this shit outta my head
+You probably think that you are better now, better now
+You only say that 'cause I'm not around, not around
+You know I never meant to let you down, let you down
+Woulda gave you anything, woulda gave you everything
+You know I say that I am better now, better now
+I only say that 'cause you're not around, not around
+You know I never meant to let you down, let you down
+Woulda gave you anything, woulda gave you everything (oh wow)
+I seen you with your other dude
+He seemed like he was pretty cool
+I was so broken over you
+Life it goes on, what can you do?
+I just wonder what it’s gonna take
+Another foreign or a bigger chain
+Because no matter how my life has changed
+I keep on looking back on better days
+You probably think that you are better now, better now
+You only say that 'cause I'm not around, not around
+You know I never meant to let you down, let you down
+Woulda gave you anything, woulda gave you everything
+You know I say that I am better now, better now
+I only say that 'cause you're not around, not around
+You know I never meant to let you down, let you down
+Woulda gave you anything, woulda gave you everything (oh wow)
+I promise
+I swear to you I'll be okay
+You're only the love of my life";
