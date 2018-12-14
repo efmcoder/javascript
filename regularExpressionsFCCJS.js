@@ -410,5 +410,31 @@ console.log(result32);
 console.log(result33);
 console.log(result34);
 
+console.log("Use +ve and -ve lookaheads to check patterns in a password");
+let password = "Magomano22";
+let checkPass = /(?=\w{8,16})(?=\D*\d)/;
+//\w finds all is equivalent to [A-Za-z0-9_]
+//\D match non-digits
+//\d same as [0-9] match digits
+//* looks for zero or more characters
+result35 = password.match(checkPass);
+result36 = checkPass.test(password);
+console.log(result35);
+console.log(result36);//if there r digits, should return true
 
-let betterNow = "You're only the love of my life";
+//PROBLEM:
+let sampleWord = "astronaut17";
+let pwRegex = /(?=\w{5,})(?=\D*\d{2})/;
+let result37 = pwRegex.test(sampleWord);
+let result38 = sampleWord.match(pwRegex);
+console.log(result37);
+console.log(result38);
+
+console.log("Review: Check that a string contains any letter followed by 4 numbers");
+//any letter: \w also means [A-Za-z0-9_]
+//4 digits {4}
+//[A-Za-z][0-9]{4}]
+//the above means:
+//i) match a character class of any letter [A-Za-z]
+//ii) match a character class of any number [0-9]
+//iii) repeated 4 times {4}
