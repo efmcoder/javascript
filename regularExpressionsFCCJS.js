@@ -218,7 +218,7 @@ let calRegex = /^Cal/;
 console.log(calRegex.test(rickyAndCal));
 //returns true
 
-console.log("#18: Match Ending Sting Patters dollar sign $");
+console.log("#18: Match Ending String Patters dollar sign $");
 let theEnding = "This is a never ending story";
 let storyRegex = /story$/;
 console.log(storyRegex.test(theEnding));
@@ -456,3 +456,34 @@ let repeatStr = "regex regex";
 let repeatRegex = /(\w+)\s\1/;
 console.log(repeatRegex.test(repeatStr));//returns true
 console.log(repeatStr.match(repeatRegex));//finds where the match is
+// \w finds all. Same as [A-Za-z0-9_]
+// \s matches whitespace, tab, etc
+// + to look for one or more characters
+// \d match digits 0-9
+// \D match non-digits
+// ^ everything not a vowel
+let repeatNum = "42 42 42";
+let repeat1Regex = /^(\d+)\s\1\s\1$/;
+console.log(repeat1Regex.test(repeatNum));
+console.log(repeatNum.match(repeat1Regex));
+/*
+Regex should use the shorthand character class for digits.
+Passed
+Regex should reuse the capture group twice.
+Passed
+Regex should have two spaces separating the three numbers.
+Passed
+Regex should match "42 42 42".
+Passed
+Regex should match "100 100 100".
+Passed
+Regex should not match "42 42 42 42".
+Passed
+Regex should not match "42 42".
+Passed
+Regex should not match "101 102 103".
+Passed
+Regex should not match "1 2 3".
+Passed
+Regex should match "10 10 10".
+*/
