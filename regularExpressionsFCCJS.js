@@ -438,3 +438,21 @@ console.log("Review: Check that a string contains any letter followed by 4 numbe
 //i) match a character class of any letter [A-Za-z]
 //ii) match a character class of any number [0-9]
 //iii) repeated 4 times {4}
+let stringFaith = "Faith";
+let faithRegex = /[A-Za-z0-9]{4}/;
+let result39 = stringFaith.match(faithRegex);
+let result40 = faithRegex.test(stringFaith);
+console.log(result39);
+console.log(result40);
+
+console.log("#31:Reuse Patterns using CAPTURE GROUPS");
+//Parentheses ( and ) are used to repeat substrings
+//you put the regex of the pattern that will repeat btw the parentheses
+//to specify where the repeat string will appear, u use the backslash \ and then a number
+//this # starts at 1 and increases with each additional capture group u use
+//e.g., \1 to match the first group
+
+let repeatStr = "regex regex";
+let repeatRegex = /(\w+)\s\1/;
+console.log(repeatRegex.test(repeatStr));//returns true
+console.log(repeatStr.match(repeatRegex));//finds where the match is
