@@ -487,3 +487,23 @@ Regex should not match "1 2 3".
 Passed
 Regex should match "10 10 10".
 */
+
+console.log("#32: Use Capture groups to search and replace");
+//you can search and replace text in a string using .replace()
+
+let wrongText = "The sky is silver";
+let silverRegex = /silver/;
+console.log(wrongText.replace(silverRegex,"blue"));
+
+let huhText = "This sandwich is good";
+let fixRegex = /good/;
+let replaceText = "okey-dokey";
+let result41 = huhText.replace(fixRegex, replaceText);
+console.log(result41);
+
+
+console.log("#33:Remove whitespace from start and end");
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g;
+let result42 = hello.replace(wsRegex, '');
+console.log(result42);
