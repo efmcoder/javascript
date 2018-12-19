@@ -13,3 +13,9 @@ console.log(myArray[0]);
 console.log("#3: Add items to Array using push() and unshift()");
 //push() adds elements to the end of an array
 //unshift() adds elements to the beginning
+let twentyThree = "XXIII";
+let romanNumerals = ["XXI", "XXII"];
+
+romanNumerals.unshift("XIX", "XX");
+romanNumerals.unshift("How do");
+console.log(romanNumerals);
