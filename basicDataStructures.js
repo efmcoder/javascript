@@ -17,5 +17,14 @@ let twentyThree = "XXIII";
 let romanNumerals = ["XXI", "XXII"];
 
 romanNumerals.unshift("XIX", "XX");
-romanNumerals.unshift("How do");
+romanNumerals.push("How do");
 console.log(romanNumerals);
+
+//PROBLEM (THE BELOW IS NOT PRINTING TO CONSOLE ??)
+function mixedNumbers(arr){
+  mixedNumbers.unshift("I", 2, "three");
+  mixedNumbers.push(7, "VIII", "nine");
+  return arr;
+}
+console.log(mixedNumbers.unshift());
+console.log(mixedNumbers.push());
