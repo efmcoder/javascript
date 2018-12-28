@@ -59,3 +59,43 @@ return arr.reduce((a,b) => a + b);
 console.log(sumOfTen([2,5,1,5,2,1]));
 
 console.log("#7: Add items using splice()");
+function colorChange(arr, index, newColor){
+  arr.splice(index, 1, newColor);
+  return arr;
+}
+let colorScheme = ["#878787", "#a08794", "#bb7e8c", "#c9b6be", "#d1becf"];
+colorScheme = colorChange(colorScheme, 2, "#332327");
+console.log(colorScheme);
+//this function removes the 2nd indexed item #bb7e8c and replaces it with #332327
+
+//PROBLEM
+function htmlColorNames(arr){
+arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
+  return arr;
+}
+console.log(htmlColorNames(["DarkGoldenRod", "WhiteSmoke", "LavendarBlush", "PaleTurquoise", "FireBrick"]));
+
+console.log("#8: Copy items using slice()");
+/*
+slice(), rather than modifying an array, copies, or
+extracts, a given number of elements to a new array,
+leaving the array it is called upon untouched.
+slice() takes only 2 parameters —
+the first is the index at which to begin extraction,
+and the second is the index at which to stop extraction
+(extraction will occur up to, but not including
+the element at this index)
+*/
+let weatherConditions = ["rain", "snow", "sleet", "hail", "clear"];
+let todaysWeather = weatherConditions.slice(1,3);
+console.log(todaysWeather);
+//answer = snow, sleet
+
+//PROBLEM
+function forecast(arr){
+return arr.slice(2,4);
+}
+console.log(forecast(["cold", "rainy", "warm", "sunny", "cool", "thunderstorms"]));
+//answer = warm, sunny
+
+console.log("#9: Cooy an array with the spread operator");
