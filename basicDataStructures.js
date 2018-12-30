@@ -104,3 +104,45 @@ console.log("#9: Cooy an array with the spread operator");
 //allows us to copy all of an arrays elements, in order
 //with a simple & readable syntax
 //example:
+
+let thisArray = [true, true, undefined, false, null];
+let thatArray = [...thisArray];
+let thatArray2 = thisArray.slice(0,2);
+console.log(thatArray);
+console.log(thatArray2)
+
+console.log("#9: PROBLEM CAN BUILD PYRAMID WITH THIS");
+//PROBLEM
+function copyMachine(arr, num){
+  let newArr = [];
+  while (num >= 1){
+    newArr.push([...arr]); //using push() and spread array
+    num--;
+  }
+  return newArr;
+}
+console.log(copyMachine([true, false, true],5));
+
+console.log("#10: Combine Arrays with the spread operator");
+//another advantage of spread operator is the ability
+//to combine arrays or to insert all the elements of
+//one array into another, at any index
+let scarboroughFair = ["parsley", "sage", "rosemary","thyme"];
+let boringSong= ["basil", "cilantro", ...scarboroughFair, "coriander"];
+console.log(boringSong);
+
+console.log("#10: Problem");
+function spreadOut(){
+  let fragment = ["to", "code"];
+  let sentence = ["I", "like", ...fragment];
+  return sentence;
+}
+console.log(spreadOut());
+//Answer should be: I like to code
+
+console.log("#11: Check for the presence of an element with indexOf()");
+//returns the index of the element or -1 if it can't be found
+let fruits = ["apples", "pears", "oranges", "peaches", "pears"];
+console.log(fruits.indexOf("dates"));
+console.log(fruits.indexOf("oranges"));
+console.log(fruites.indexOf("pears"));
