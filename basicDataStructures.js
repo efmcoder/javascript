@@ -76,7 +76,7 @@ arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
 console.log(htmlColorNames(["DarkGoldenRod", "WhiteSmoke", "LavendarBlush", "PaleTurquoise", "FireBrick"]));
 
 console.log("#8: Copy items using slice()");
-/*
+/* selects what to copy
 slice(), rather than modifying an array, copies, or
 extracts, a given number of elements to a new array,
 leaving the array it is called upon untouched.
@@ -99,3 +99,8 @@ console.log(forecast(["cold", "rainy", "warm", "sunny", "cool", "thunderstorms"]
 //answer = warm, sunny
 
 console.log("#9: Cooy an array with the spread operator");
+//copies all an array's elements
+//from ES6, the spread operator which looks like this: ...
+//allows us to copy all of an arrays elements, in order
+//with a simple & readable syntax
+//example:
