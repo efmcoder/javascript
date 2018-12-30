@@ -143,6 +143,17 @@ console.log(spreadOut());
 console.log("#11: Check for the presence of an element with indexOf()");
 //returns the index of the element or -1 if it can't be found
 let fruits = ["apples", "pears", "oranges", "peaches", "pears"];
-console.log(fruits.indexOf("dates"));
-console.log(fruits.indexOf("oranges"));
-console.log(fruites.indexOf("pears"));
+console.log(fruits.indexOf("dates")); //-1 doesn't exist
+console.log(fruits.indexOf("oranges")); //2 index 2
+console.log(fruits.indexOf("pears")); //1 index 1-first result
+
+console.log("#11: PROBLEM");
+function quickCheck(arr, elem){
+  if (arr.indexOf(elem) >=0){
+    return true;
+  }
+  return false;
+}
+console.log(quickCheck(["squash", "onions", "shallots"],"mushrooms"));
+
+console.log("#12: Iterate through All an Array's items using For Loops");
