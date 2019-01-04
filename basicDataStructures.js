@@ -248,3 +248,31 @@ let FCC_User = {
   points: 2000,
   completedProjects: 1
 };
+//we can access the above object as follows using dot notation:
+let userData = FCC_User.followers;
+console.log(userData);
+//or access via bracket notation:
+let userData2 = FCC_User['followers'];//note the use of quotes
+console.log(userData2);
+/*
+'followers' is used wt quotes in bracket notation because:
+Notice that with bracket notation, we enclosed followers
+in quotes. This is because the brackets actually allow us
+to pass a variable in to be evaluated as a property name
+(hint: keep this in mind for later!). Had we passed
+followers in without the quotes, the JavaScript engine
+would have attempted to evaluate it as a variable, and
+a ReferenceError: followers is not defined would have
+been thrown.
+*/
+
+console.log("PROBLEM - add key-value pairs");
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+foods["bananas"] = 13;
+foods["grapes"] = 35;
+foods ["strawberries"] = 27;
+console.log(foods);
