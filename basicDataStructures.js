@@ -276,3 +276,33 @@ foods["bananas"] = 13;
 foods["grapes"] = 35;
 foods ["strawberries"] = 27;
 console.log(foods);
+
+console.log("#15: Modify an Object Nested within an object");
+let nestedObject = {
+  id: 123456789,
+  date: "December 31, 2018",
+  data: {
+    totalUsers: 100,
+    online: 80,
+    onlineStatus: {
+      active: 67,
+      away: 13,
+    }
+  }
+};
+console.log(nestedObject.data.onlineStatus.active);
+
+console.log("PROBLEM");
+let userActivity = {
+  id: 2354654654,
+  date: "February 16, 2019",
+  data: {
+    totalUsers2: 51,
+    online2:42,
+  }
+};
+userActivity.data.online2 = 45;
+console.log(userActivity);
+console.log(userActivity.data.online2);
+
+console.log("#16: Access Property names with bracket notation");
