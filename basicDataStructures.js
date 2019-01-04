@@ -306,3 +306,39 @@ console.log(userActivity);
 console.log(userActivity.data.online2);
 
 console.log("#16: Access Property names with bracket notation");
+/*example: we have a foods object
+and we want to search it for some selected foods
+we could create the below
+code below will evaluate the value stored in the
+selectedFood variable and return the value of that key
+in the foods object, or undefined if it's not there
+
+let selectedFood = getCurrentFood(scannedItems);
+let inventory = foods[selectedFood];
+*/
+let juice = {
+  passion: 1.15,
+  olive: 1.45,
+};
+function checkInventoryy(scannedItemm){
+  return juice[scannedItemm];
+}
+console.log(checkInventoryy("passion"));
+
+let food = {
+  apple: 25,
+  orange: 32,
+  plum: 28,
+  banana: 13,
+  grape: 35,
+  strawberry: 27
+};
+
+function checkInventory(scannedItem){
+  return food[scannedItem];
+}
+
+console.log(food);
+console.log(checkInventory("apple"));
+
+console.log("#17: Use delete Keyword to remove object properties");
