@@ -240,3 +240,11 @@ let myNestedArray = [
   // change code above this line
 ];
 console.log(myNestedArray);
+
+console.log("#14: Add Key-Value pairs to JavaScript Objects");
+let FCC_User = {
+  username: "efm_Coder",
+  followers: 500,
+  points: 2000,
+  completedProjects: 1
+};
