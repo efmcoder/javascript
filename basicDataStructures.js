@@ -157,3 +157,17 @@ function quickCheck(arr, elem){
 console.log(quickCheck(["squash", "onions", "shallots"],"mushrooms"));
 
 console.log("#12: Iterate through All an Array's items using For Loops");
+//can use every() or forEach() or map() or a for Loop
+
+console.log("Example"); //find number greater than 10 in array
+function greaterThanTen(arr){
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++)
+  {
+    if (arr[i] > 10){
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+console.log(greaterThanTen([2,12,8,14,80,0,1]));
