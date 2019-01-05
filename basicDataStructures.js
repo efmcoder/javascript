@@ -336,9 +336,27 @@ let food = {
 
 function checkInventory(scannedItem){
   return food[scannedItem];
-}
 
+}
+delete food.apple;
 console.log(food);
 console.log(checkInventory("apple"));
 
 console.log("#17: Use delete Keyword to remove object properties");
+let foodd = {
+  applee: 25,
+  orangee: 32,
+  plumm: 28,
+  bananaa: 13,
+  grapee: 35,
+  strawberryy: 27
+};
+
+function checkInventory(scannedItem){
+  return food[scannedItem];
+
+}
+delete foodd.applee;
+console.log(foodd);
+
+console.log("#18: Check if an Object has a Property");
