@@ -360,3 +360,63 @@ delete foodd.applee;
 console.log(foodd);
 
 console.log("#18: Check if an Object has a Property");
+//if we want to know if an object has a specific property
+//2 ways:
+//hasOwnProperty()
+//"in" keyword
+let users = {
+  Alan: {
+    age: 27,
+    online: true,
+  },
+  Jeff: {
+    age: 32,
+    online: true,
+  },
+  Sarah: {
+    age: 48,
+    online: true,
+  },
+  Ryan: {
+    age: 19,
+    online: true,
+  }
+};
+
+function isEveryoneHere(obj){
+  if (users.hasOwnProperty("Alan"))
+  {
+  return true;
+  }
+  return false;
+  //"Alan" in users;
+}
+console.log(isEveryoneHere(users));
+
+console.log("#19: Iterate through the Keys of an Object with a for...in Statement");
+//iterate thru all the keys within an object
+//use a "for...in" statement
+
+let userss = {
+  Alann: {
+    age: 27,
+    online: false,
+  },
+  Jefff: {
+    age: 32,
+    online: true,
+  },
+  Sarahh: {
+    age: 48,
+    online: true,
+  },
+  Ryann: {
+    age: 19,
+    online: false,
+  }
+};
+function countOnline(userss) {
+	//let n = 0;
+	for (let user in userss) if (userss[user].online) //n++;
+	return true;
+};
