@@ -400,23 +400,104 @@ console.log("#19: Iterate through the Keys of an Object with a for...in Statemen
 let userss = {
   Alann: {
     age: 27,
-    online: false,
+    onlines: false,
   },
   Jefff: {
     age: 32,
-    online: true,
+    onlines: true,
   },
   Sarahh: {
     age: 48,
-    online: true,
+    onlines: true,
   },
   Ryann: {
     age: 19,
-    online: false,
+    onlines: true,
   }
 };
-function countOnline(userss) {
-	//let n = 0;
-	for (let user in userss) if (userss[user].online) //n++;
-	return true;
+
+//THIS SHOWS THE ONLINE STATUS OF EACH USER
+/*function countOnline(obj) {
+  {
+	for (let name in userss) {
+    console.log(userss[name].onlines);
+}
+  }
+}
+console.log(countOnline(userss));*/
+
+
+//THIS IS THE SOLUTION. IT RETURNS THE NUMBER OF USERS WHO ARE ONLINE
+function countOnline(obj) {
+      var count = 0;
+  // change code below this line
+
+	for (let name in userss) {
+    if (userss[name].onlines === true){
+      count++;
+  // change code above this line
+}
+  }
+  return count;
+}
+console.log(countOnline(userss));
+
+
+console.log("#20: Generate an array of all object keys with Object.keys()");
+let yusers = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
 };
+
+function getArrayOfUsers(obj) {
+  // change code below this line
+  return Object.keys(obj);
+  // change code above this line
+}
+
+console.log(getArrayOfUsers(yusers));
+
+console.log("#21: Modify an Array stored in an object");
+let yyusers = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(userObj, friend) {
+  // change code below this line
+userObj.data.friends.push(friend);
+  //return userObj;
+  return userObj.data.friends;
+  // change code above this line
+}
+
+console.log(addFriend(yyusers, 'Pete'));
