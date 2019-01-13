@@ -30,3 +30,21 @@ function splitString(name){
   let splittString = name.split("");
 };
 console.log(splitString("hello"));
+
+console.log("How To Reverse");
+var faith2 = ["female", 29, "teacher"];
+console.log(faith2);
+var reverseFaith = faith2.reverse();
+console.log(reverseFaith)
+
+console.log("How To Split");
+var faith = "faith";
+var splitFaith = faith.split(""); //no space separates each letter
+console.log(splitFaith);
+
+console.log("How to remove chars and spaces");
+var item = "56DD/AD*TGT";
+console.log(item);
+var removeChars = /\s*(?:;|$)\s*/;
+var itemList = item.split(removeChars);
+console.log(item);
