@@ -42,9 +42,41 @@ var faith = "faith";
 var splitFaith = faith.split(""); //no space separates each letter
 console.log(splitFaith);
 
-console.log("How to remove chars and spaces");
+console.log("How to remove chars and spaces - NOT REALLY CORRECT");
 var item = "56DD/AD*TGT";
 console.log(item);
 var removeChars = /\s*(?:;|$)\s*/;
+
 var itemList = item.split(removeChars);
 console.log(item);
+
+
+
+/*console.log("REVERSE A STRING PROBLEM - #1: SPLIT ONLY");
+function reverseString(str){
+  return str.split("");
+  return str;
+}
+console.log(reverseString("jasmine"));*/
+
+console.log("REVERSE A STRING PROBLEM - #2: REVERSE");
+console.log("YOU USE: .reverse()");
+  var word = ["jasmine","tommy", "jackie"];
+  var reversed = word.reverse();
+  console.log(reversed);
+
+
+  console.log("REVERSE A STRING PROBLEM");
+  function reverseString(str){
+    return str.split("").reverse().join("");
+    return str;
+  }
+  console.log(reverseString("jasmine"));
+
+console.log("#3: Factorialize a Number");
+function factory(num){
+  if (num ===0) {return 1;}
+  return num * factory(num-1);
+
+}
+console.log(factory(5));
