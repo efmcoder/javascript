@@ -100,3 +100,10 @@ for (var i = 0; i <words.length; i++){
 return maxLength;
 }
 console.log(findLongestWordLength("Madam, I'm Adam"));
+
+//before you split, u must first define the variable
+console.log("HOW TO SPLIT");
+//str.split()
+var nonsense = "maybe i am overthinking this";
+var array = nonsense.split(" ");
+console.log(array);
