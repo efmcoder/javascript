@@ -74,9 +74,29 @@ console.log("YOU USE: .reverse()");
   console.log(reverseString("jasmine"));
 
 console.log("#3: Factorialize a Number");
-function factory(num){
-  if (num ===0) {return 1;}
-  return num * factory(num-1);
-
+function pocahontas(num){
+  if (num ===0) {
+    return 1;
+  }
+  return num * pocahontas(num-1);
 }
-console.log(factory(5));
+console.log(pocahontas(5));
+
+console.log("#4: Find the longest word in a string");
+// first, create a variable eg: var words = "Madam, I'm Adam"
+//secondly, split the variable into an array of words
+//i.e., var words = str.split("Madam, I'm Adam");
+//third, reiterate through string using a for loop
+
+function findLongestWordLength(str){
+var words = str.split(" "); //must have space btw quotes
+var maxLength = 0; //what's the purpose of this?
+
+for (var i = 0; i <words.length; i++){
+  if (words[i].length > maxLength){
+    maxLength = words[i].length;
+  }
+}
+return maxLength;
+}
+console.log(findLongestWordLength("Madam, I'm Adam"));
