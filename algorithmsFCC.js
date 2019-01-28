@@ -107,3 +107,47 @@ console.log("HOW TO SPLIT");
 var nonsense = "maybe i am overthinking this";
 var array = nonsense.split(" ");
 console.log(array);
+
+var a = 0, b =10;
+var a = b++;
+//document.write(a);
+console.log(a);
+console.log(b);
+var result = 20;
+result *=5;
+console.log(result);
+
+console.log("Simple count loop");
+for (var i = 0; i <=10; i++ ){
+  console.log(i);
+}
+for (var j = 10; j>0; j--){
+  console.log(j);
+}
+
+var k=1 ;
+while (k<=5){
+  console.log(k);
+  k=k+1;
+}
+
+for (var y = 0; y <=20; y +=3){
+  console.log(y);
+}
+
+console.log("find output");
+var sum = 0;
+for(i=4; i<8;i++){
+  if(i==6){
+    continue;
+  }
+  sum+=i;
+}
+console.log(sum);
+
+console.log("output of new code");
+var x = 0;
+while(x<6){
+  x++;
+}
+console.log(x);
