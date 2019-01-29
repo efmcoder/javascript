@@ -151,3 +151,7 @@ while(x<6){
   x++;
 }
 console.log(x);
+
+console.log("from cell phone");
+var course = {name: "JS", lessons:41};
+console.log(course.name.length);
