@@ -155,3 +155,13 @@ console.log(x);
 console.log("from cell phone");
 var course = {name: "JS", lessons:41};
 console.log(course.name.length);
+
+console.log("object constructor, this keyword and new keyword");
+function person (name, age, status){
+  this.name = name;
+  this.age = age;
+  this.status = status;
+}
+var p1 = new person("Tom", 55, "single");
+var p2 = new person("amy", 29, "married");
+console.log(p1.name);
