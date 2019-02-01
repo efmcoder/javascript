@@ -1,4 +1,4 @@
-console.log("#1: Convert Celcius to Fahrenheit");
+/*console.log("#1: Convert Celcius to Fahrenheit");
 function convertToFahrenheit(Celcius){
   let Fahrenheit = (Celcius*9/5)+32;
   return Fahrenheit
@@ -47,8 +47,8 @@ var item = "56DD/AD*TGT";
 console.log(item);
 var removeChars = /\s*(?:;|$)\s*/;
 
-var itemList = item.split(removeChars);
-console.log(item);
+//var itemList = item.split(removeChars);
+//console.log(item);
 
 
 
@@ -88,7 +88,7 @@ console.log("#4: Find the longest word in a string");
 //i.e., var words = str.split("Madam, I'm Adam");
 //third, reiterate through string using a for loop
 
-function findLongestWordLength(str){
+/*function findLongestWordLength(str){
 var words = str.split(" "); //must have space btw quotes
 var maxLength = 0; //what's the purpose of this?
 
@@ -163,5 +163,20 @@ function person (name, age, status){
   this.status = status;
 }
 var p1 = new person("Tom", 55, "single");
-var p2 = new person("amy", 29, "married");
-console.log(p1.name);
+var p2 = new person("Amy", 29, "married");
+console.log(p1.name + " is " + p2.status + " to " + p2.name);
+console.log(p2.age);
+console.log(p1);
+*/
+
+console.log("Methods are functions that belong to objects");
+function persons(name, color){
+  this.name = name;
+  this.color = color;
+  this.changeName = function (name){
+    this.name = name;
+  }
+}
+var p1 = new persons("Pocahontas", 27);
+p1.changeName("Rosie");
+console.log(persons.name);
