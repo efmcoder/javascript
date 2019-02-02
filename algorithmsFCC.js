@@ -1,4 +1,4 @@
-/*console.log("#1: Convert Celcius to Fahrenheit");
+console.log("#1: Convert Celcius to Fahrenheit");
 function convertToFahrenheit(Celcius){
   let Fahrenheit = (Celcius*9/5)+32;
   return Fahrenheit
@@ -45,19 +45,19 @@ console.log(splitFaith);
 console.log("How to remove chars and spaces - NOT REALLY CORRECT");
 var item = "56DD/AD*TGT";
 console.log(item);
-var removeChars = /\s*(?:;|$)\s*/;
+//var removeChars = /\s*(?:;|$)\s;
 
 //var itemList = item.split(removeChars);
-//console.log(item);
+console.log(item);
 
 
 
-/*console.log("REVERSE A STRING PROBLEM - #1: SPLIT ONLY");
+console.log("REVERSE A STRING PROBLEM - #1: SPLIT ONLY");
 function reverseString(str){
   return str.split("");
   return str;
 }
-console.log(reverseString("jasmine"));*/
+console.log(reverseString("jasmine"));
 
 console.log("REVERSE A STRING PROBLEM - #2: REVERSE");
 console.log("YOU USE: .reverse()");
@@ -88,7 +88,7 @@ console.log("#4: Find the longest word in a string");
 //i.e., var words = str.split("Madam, I'm Adam");
 //third, reiterate through string using a for loop
 
-/*function findLongestWordLength(str){
+function findLongestWordLength(str){
 var words = str.split(" "); //must have space btw quotes
 var maxLength = 0; //what's the purpose of this?
 
@@ -167,16 +167,17 @@ var p2 = new person("Amy", 29, "married");
 console.log(p1.name + " is " + p2.status + " to " + p2.name);
 console.log(p2.age);
 console.log(p1);
-*/
 
-console.log("Methods are functions that belong to objects");
-function persons(name, color){
+
+console.log("Methonds are functions placed inside objects");
+function persons(name, age){
   this.name = name;
-  this.color = color;
+  this.age = age;
+  //method inside object starts below
   this.changeName = function (name){
     this.name = name;
   }
 }
-var p1 = new persons("Pocahontas", 27);
-p1.changeName("Rosie");
-console.log(persons.name);
+var p = new persons("Pocahontas", 27);
+p.changeName("Rosie");
+console.log(p.name);
