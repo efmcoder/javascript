@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<title>Algorithms</title>
+<script type ="text/javascript" src="script.js"></script>
+</head>
+<h1>Algorithms Practice</h1>
+Hello World!
+<br>
+<!-- <script> alert("Alert we've got JS onboard")</script> -->
+<!-- <script> prompt("Enter a number", "")</script> -->
+
+<div id="demo"></div> <!--has to be outside script tags -->
+<script>
+var elem = document.getElementById("demo");
+elem.innerHTML = "Hello Noah";
+</script>
+<br>
+
+<p>hi</p> <!--outside script tags-->
+<p>hello</p> <!--outside script tags-->
+<p>hey</p> <!--outside script tags-->
+<script>
+  var arr = document.getElementsByTagName("p");
+for (var x = 0; x < arr.length; x++){
+  arr[x].innerHTML = "Hi There";
+}
+</script>
+</body>
+</html>

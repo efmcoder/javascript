@@ -202,7 +202,7 @@ var n2 = Math.random(); //returns number btw 0 and 1
 var n3 = Math.ceil(Math.random()*10);
 console.log(n1, n2, n3);
 
-var n = prompt("Enter a number", "");
+/*var n = prompt("Enter a number", " ");
 var answer = Math.sqrt(n);
 alert("The square root of " + n + " is " + answer);
 
@@ -210,6 +210,8 @@ function myAlert(){
   alert("Hi");
 }
 setInterval(myAlert, 3000);
+*/
+
 //1000ms = 1 second
 //above code will call the alert function every 3 seconds
 
@@ -223,3 +225,34 @@ function calc(){
   setInterval(calc, 2000);
 }
 console.log(calc);
+
+//Date object
+var date = new Date();
+console.log(date);
+
+var d2 = new Date().toLocaleString();
+console.log(d2);
+
+console.log("LEARN: Date Methods");
+var d3 = new Date();
+var hours = d3.getFullYear();
+console.log(hours);
+
+console.log("LEARN: OTHER TIME DATE");
+//why isn't this working??
+function time(){
+  var d4 = new Date();
+  var year = d4.getFullYear();
+  var month = d4.getMonth();
+  var date = d4.getDate();
+  var day = d4.getDay();
+  var hours = d4.getHours();
+  var minutes = d4.getMinutes();
+  var seconds = d4.getSeconds();
+  var milliseconds = d4.getMilliseconds();
+}
+console.log(time);
+
+var min = new Date();
+var mins = min.getMinutes();
+console.log(mins);
