@@ -181,3 +181,45 @@ function persons(name, age){
 var p = new persons("Pocahontas", 27);
 p.changeName("Rosie");
 console.log(p.name);
+
+var c1 = ["HTML", "CSS", "JavaScript"];
+console.log(c1.length);
+var c2 = ["Python", "Java", "C++"];
+var courses = c1.concat(c2);
+console.log(courses);
+
+console.log("In Associative Arrays as shown below, index numbers are replaced with strings");
+var mundu = [];
+mundu["name"] = "Wanjiku";
+mundu["age"] = 20;
+console.log(mundu["age"]);
+//better to use an object when you want the index to be a string(text)
+//better to use an array when you want the index to be a number
+
+console.log("Math Object");
+var n1 = Math.sqrt(4);
+var n2 = Math.random(); //returns number btw 0 and 1
+var n3 = Math.ceil(Math.random()*10);
+console.log(n1, n2, n3);
+
+var n = prompt("Enter a number", "");
+var answer = Math.sqrt(n);
+alert("The square root of " + n + " is " + answer);
+
+function myAlert(){
+  alert("Hi");
+}
+setInterval(myAlert, 3000);
+//1000ms = 1 second
+//above code will call the alert function every 3 seconds
+
+//how to write a functions
+function name(){
+  //what u want to say
+}
+
+//how to write a setInterval function
+function calc(){
+  setInterval(calc, 2000);
+}
+console.log(calc);
