@@ -4,7 +4,7 @@
 <head>
 <title>Algorithms</title>
 <script type ="text/javascript" src="script.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
+<!---<link rel="stylesheet" type="text/css" href="style.css">--->
 </head>
 <h1>Algorithms Practice</h1>
 Hello World!
@@ -23,16 +23,49 @@ elem.innerHTML = "Hello Noah";
 <p>hello</p> <!--outside script tags-->
 <p>hey</p> <!--outside script tags-->
 <script>
-  var arr = document.getElementsByTagName("p");
+var arr = document.getElementsByTagName("p");
 for (var x = 0; x < arr.length; x++){
   arr[x].innerHTML = "Hi There";
 }
 </script>
 
+<style>
+#container{
+  width: 200px;
+  height: 200px;
+  background: green;
+  position: relative;
+}
+#box{
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: relative;
+}
+
+</style>
+
 
 <div id="container">
   <div id="box"></div><!--box inside larger box-->
 </div>
+<script>
+var t = setInterval(move, 5);
+var pos = 0;
+var box = document.getElementById("box");
+
+function move(){
+  if(pos >=150){
+    clearInterval(t);
+  }
+  else{
+    pos +=1;
+    box.style.left = pos+"px";
+  }
+}
+
+</script>
+
 
 
 </body>
