@@ -10,3 +10,13 @@
   background: red;
   position: relative;
 }
+button {
+  margin-top: 30px;
+  float: left;
+  height: 50px;
+}
+img {
+  float:left;
+  margin-right: 10px;
+  margin-left: 10px;
+}

@@ -66,6 +66,36 @@ function move(){
 
 </script>
 
+<button onclick="show()">Click Me</button>
+<script>
+/*function show(){
+  alert("Hi There");
+}*/
+</script>
+
+<!---When u type in text into box, then click on click me, the text changes to uppercase --->
+<input type = "text" id = "name"
+onchange = "change()">
+<script>
+function change(){
+  var x = document.getElementById("name");
+  x.value = x.value.toUpperCase();
+}
+</script>
+<br>
+<br>
+
+<!---CREATE AN EVENT HANDLER THAT REMOVES ITSELF AFTER BEING EXECUTED -->
+<button id="demo2">Start</button>
+<script>
+var btn = document.getElementById("demo2");
+btn.addEventListener("click", myFunction);
+
+function myFunction(){
+  alert(Math.ceil(Math.random()*100));
+  btn.removeEventListener("click", myFunction);
+}
+</script> 
 
 
 </body>
