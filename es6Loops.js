@@ -27,3 +27,19 @@ var word = "juicy";
 for (k = 0; k < word.length; k++){
   console.log(k);
 }
+//above code returns 012345 meaning 5 letters in word juicy
+
+var w2 = "juicy";
+var res = w2.split("");
+console.log(res);
+//above code returns ['j', 'u', 'i', 'c', 'y']
+
+var w2 = "juicy";
+var res = w2.split("",2);
+console.log(res);
+//above code returns ['j', 'u']
+
+var w3 = "juicy";
+var res1 = w3.split(" ");
+console.log(res1);
+//above code returns [juicy]
