@@ -180,3 +180,29 @@ console.log(magic(1,2,3,4,5,6));
 //these items are 1,3,5,
 //so items divisible by 2 are 2,4,6
 //next, sum up these numbers so 2+4+6 = 12
+
+function myFunction (w,x,y,z){
+  console.log(w,x,y,z);
+}
+var args = [1,2,3];
+myFunction.apply(null,args.concat(4));
+//Answer: 1 2 3 4
+
+//Do above with ES6 and Spread Operators
+const myFunction2 = (w, x, y, z) => {
+  console.log(w + x + y + z);
+};
+let args2 = [1,2,3];
+myFunction2(...args2, 4);
+
+var dateFields = [1972, 2, 2];
+//1 Jan 1970
+var date = new Date(...dateFields);
+console.log(date);
+
+const numbers = [1,2,3];
+function sum(x,y,z){
+  return x+y+z;
+}
+console.log(sum(...numbers));
+console.log(sum(1,2,3));
