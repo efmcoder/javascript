@@ -100,3 +100,21 @@ const arr1 = [1,2,3];
 const arr2 = [5,6,7,8];
 let arr3 = [...arr1,4,...arr2];
 console.log(arr3);
+
+const arr4 = [1,2,3,4,5];
+const arr5 = [...arr4, 6];
+const func = (...rest)=> {
+  console.log(rest.length);
+}
+func(...arr4);
+func(...arr5);
+
+const user = {
+  name: "David",
+  age: 28,
+  id: 1234
+};
+let newUser = Object.assign({},
+{name,age} = user,
+{id:9999});
+console.log(newUser);
