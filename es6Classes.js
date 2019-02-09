@@ -85,3 +85,18 @@ class Cat {
 }
 let c = new Cat("Meow");
 c.bark();
+
+//repeat strings
+console.log("foo".repeat(3));
+
+//findindex()
+let value = [4,5,1,8,2,0].findIndex(x=>x>3);
+console.log(value);
+
+let value2 = [4,5,1,8,2,0].find(x=>x>3);
+console.log(value2);
+
+const arr1 = [1,2,3];
+const arr2 = [5,6,7,8];
+let arr3 = [...arr1,4,...arr2];
+console.log(arr3);
