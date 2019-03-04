@@ -1,3 +1,4 @@
+document.write('<br/>');
 var iceCream = "chocolate"; //variable declaration
 if (iceCream === "chocolate" ){ //looks like a variable but the () means it's a function
 	console.log("I love chocolate!");
@@ -44,5 +45,12 @@ function sum(x,y){
 }
 console.log("The sum is " + (sum(1,3)));
 document.write("The sume is " + (sum(1,3)));
+
+document.write('<br/>');
+
+var button = document.querySelector("button");
+button.addEventListener("click", event => {
+  button.innerHTML = `Click Count: ${event.detail}`;
+});
 
 document.write('<br/>');
