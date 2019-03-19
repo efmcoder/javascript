@@ -1,3 +1,1 @@
-console.log("family".repeat(3));
-
-}
+console.log("family \n".repeat(3));
