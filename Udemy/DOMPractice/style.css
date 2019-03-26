@@ -1,0 +1,43 @@
+body {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+
+
+.ball {//equivalent of .dice
+border-color: red;
+border-style: dashed;
+padding: 5px; //between the ball and border
+margin: 5px;
+transform: translate(100%, 100%);
+}
+
+.BounceTheBall{ //equivalent of .btn-roll
+  top: 403px;
+}
+
+
+
+/*
+.btn-roll { top: 403px;}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}*/
+
+#myCanvas{
+  background-color: white;
+
+}
