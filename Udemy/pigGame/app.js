@@ -2,7 +2,7 @@ var scores, roundScore, activePlayer, gamePlaying;
 
 init();
 
-document.querySelector(".btn-roll").addEventListener("click", function(){
+document.querySelector(".btn-roll").addEventListener("click", function(){ //querySelector selects the first item it finds but there is a workaround
   if(gamePlaying){
     var dice = Math.floor(Math.random() *6) + 1;
 
