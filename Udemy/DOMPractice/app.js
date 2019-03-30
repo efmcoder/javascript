@@ -1,9 +1,17 @@
-var ball;
+var blueBall, redBall;
+
+init();
+document.querySelector(".clicktheBall").addEventListener("click", function(){
 
 
-document.querySelector(".rolltheBall").addEventListener("click", function(){
+  var ballDom = document.querySelector(".ball");
+  ballDom.style.display = "block";
+  ballDom.src = "ball-" + ".jpg";
+
+
   if(clickBall){
-    
+    ball += ball-2;
+    document.querySelector("#blueBall").textContent = ball;
   }
 })
 
