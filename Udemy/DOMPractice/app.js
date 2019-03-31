@@ -4,16 +4,21 @@ init();
 document.querySelector(".clicktheBall").addEventListener("click", function(){
 
 
-  var ballDom = document.querySelector(".ball");
-  ballDom.style.display = "block";
-  ballDom.src = "ball-" + ".jpg";
+
+  if(clicktheBall){
 
 
-  if(clickBall){
-    ball += ball-2;
-    document.querySelector("#blueBall").textContent = ball;
-  }
-})
+    var ballDom = document.querySelector(".ball");
+    //diceDom.style.display = "block";
+    ballDom.src = "ball-2" + ".jpg";
 
-//select the ball
-document.querySelector(".ball").textContent = ball;
+
+
+
+    /*if (dice !==1) {
+      roundScore += dice;
+      document.querySelector("#current-" + activePlayer).textContent = roundScore;
+    } else {
+      nextPlayer();
+    }*/
+  };
