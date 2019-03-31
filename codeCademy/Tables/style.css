@@ -1,0 +1,16 @@
+table, td, th{
+  border: 1px solid black;
+  font-family:sans-serif;
+  text-align: center;
+
+}
+
+th{
+  font-family: cambria;
+  background-color: #99d6ff;
+  font-size: 25px;
+}
+
+td{
+  font-size: 18px;
+}
