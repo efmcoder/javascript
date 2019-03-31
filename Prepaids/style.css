@@ -1,0 +1,20 @@
+table, th {
+  margin: 10,10,10,10;
+  border: 1px solid black;
+  text-align: center;
+  font-family: sans-serif;
+
+}
+
+th{
+  background-color: #0000ff;
+  color: white;
+}
+
+td {
+  text-align: justify;
+}
+
+.headers{
+  margin: 25px;
+}
