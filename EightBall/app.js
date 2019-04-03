@@ -1,4 +1,18 @@
-var randomNumber = Math.floor(Math.random() * 8);
+document.querySelector("eightball").addEventListener("click", function(){
+
+  if(rolling){
+    var eightball = Math.floor(Math.random() * 8);
+
+    var eightballDom = document.querySelector("eightball");
+    eightballDom.style.display="block";
+    eightballDom="eightball" + eightball + ".jpg";
+
+
+
+
+
+
+//var randomNumber = Math.floor(Math.random() * 8);
 console.log(randomNumber);
 var eightball = ""; //we will save a value to this l8r, depending on the value of randomNumber
 
@@ -24,7 +38,7 @@ if (randomNumber === 0) {
 };
 
 
-
+/*
 switch (randomNumber) {
   case 0:
   eightball = "It is certain";
@@ -58,5 +72,10 @@ switch (randomNumber) {
               eightball = "Signs say yes";
                 break;
 }
+*/
 
+}
+
+
+})
 console.log(eightball);
