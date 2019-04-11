@@ -1,12 +1,13 @@
+//give the element you want to change a variable name
+//In this case we want to change the item with the class name title
+var text = document.querySelector(".title");
 
-document.querySelector(".clicktheBall").addEventListener("click", function(){ //The querySelector() method returns the first element that matches a specified CSS selector(s) in the document.
-  if(gamePlaying){
-    var ball = Math.floor(Math.random() *6) + 1;
+//give the button a variable name
+var changeHeader = document.querySelector(".changeColor");
 
-    var ballDom = document.querySelector(".ball");
-    ballDom.style.display = "block";
-    ballDom.src = "ball-" + ball + ".jpg";
+text.classList.add("change"); //will access all the classes that the text has
 
-
-    }
+//using button variable, create a function
+changeHeader.addEventListener("click", function(){
+  text.classList.toggle("newStyle");
 });
