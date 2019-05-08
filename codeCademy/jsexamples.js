@@ -53,3 +53,10 @@ if(isNightTime){
 
 //writing above in ternary format:
 isNightTime ? console.log("Turn on the lights") : console.log("Turn off the lights");
+
+
+//PARAMETERS & ARGUMENTS
+function sayThanks(name) {
+  console.log("Thank you for your purchase " + name + "! We appreciate your business");
+}
+sayThanks("Cole"); //calls the function
