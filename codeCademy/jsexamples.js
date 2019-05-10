@@ -68,3 +68,8 @@ function makeShoppingList(item1="milk", item2="bread", item3="eggs"){
   console.log(`Remember to buy ${item3}`);
 }
 makeShoppingList();
+
+function calculateArea(w, h){
+  var Area = w * h;
+}
+console.log(2,3);
