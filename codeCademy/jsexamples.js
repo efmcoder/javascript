@@ -59,7 +59,7 @@ isNightTime ? console.log("Turn on the lights") : console.log("Turn off the ligh
 function sayThanks(name) {
   console.log("Thank you for your purchase " + name + "! We appreciate your business");
 }
-sayThanks("Cole"); //calls the function
+sayThanks("Cole"); //calls the function. If u don't have this, the console.log above will not print to console as it will not call the function
 
 //DEFAULT PARAMETERS IN ES6
 function makeShoppingList(item1="milk", item2="bread", item3="eggs"){
@@ -70,6 +70,39 @@ function makeShoppingList(item1="milk", item2="bread", item3="eggs"){
 makeShoppingList();
 
 function calculateArea(w, h){
-  var Area = w * h;
+  var Area = w * h
+  return Area;
 }
-console.log(2,3);
+console.log(calculateArea(2,3));
+
+
+function rectangleArea(width, height) {
+  if (width < 0 || height < 0) {
+    return 'You need positive integers to calculate area!';
+  }
+  //return width * height;
+}
+
+function monitorCount(rows, columns){
+  let number = (rows * columns)
+  return number;
+}
+console.log(monitorCount(5,2));
+
+
+
+function monitorCounts(rows, columns) {
+  return rows * columns;
+}
+const numOfMonitorss = monitorCounts(5, 2);
+console.log(numOfMonitorss);
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+function costOfMonitors(rows, columns){
+  return monitorCount(rows, columns) * (200);
+	const totalCost = costOfMonitors(5,4);
+}
+console.log(costOfMonitors(5,4));
