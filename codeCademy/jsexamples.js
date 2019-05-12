@@ -106,3 +106,15 @@ function costOfMonitors(rows, columns){
 	const totalCost = costOfMonitors(5,4);
 }
 console.log(costOfMonitors(5,4));
+
+//FUNCTION EXPRESSION - FUNCTION INSIDE A VARIABLE
+//Function has no name, so is an anonymous function
+const plantNeedWater = function(day){
+  if(day === "Wednesday"){
+    return true;
+  } else {
+    return false;
+  }
+};
+plantNeedWater("Tuesday");
+console.log(plantNeedWater("Tuesday"));
