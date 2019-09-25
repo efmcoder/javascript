@@ -6,19 +6,23 @@
   </head>
   <body>
 <script type="text/javascript">
-<h1 id="header1"></h1>
-var name = "Judy";
+
+/*var name = "Judy";
 var age = 21;
 var status = "married";
-//alert(name)
+alert(name);
 document.write("Hello, my name is " + name + ". I am " + age + " and I am not " + status);
+*/
 var num1 = 6546;
 var num2 = 16845;
 
+function addNumbers(){
 var calc = num1 + num2;
-document.getElementById('header1').inner.html = calc;
+document.getElementById('divContent').innerHTML = calc;
+}
 
 </script>
+    <h1 id="divContent"></h1>
 
   </body>
 </html>
