@@ -10,7 +10,19 @@
 <button onclick="alert('Hello from Cali!');" type="button" name="button">
   CLICK HERE</button>
 
+  <button id="button2" type="button" name="button">CLICK</button>
+
 <script type="text/javascript">
+//how to control button2 with JavaScript
+document.getElementById('button2').onclick = function(){
+  whenYouClickOnButton() //calls the function inside the script code
+};
+
+function whenYouClickOnButton(){
+  alert("You clicked Me!");
+}
+
+
 
 
 </script>
