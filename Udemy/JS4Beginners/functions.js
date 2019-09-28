@@ -10,6 +10,21 @@ function krogerSales(store1, store2){
 }
 krogerSales(20000, 50000);
 
+function krogerSalesNW(){
+  var store1 = 10000;
+  var store2 = 30000;
+  var calculation = store1 + store2;
+  //console.log(calculation);
+  return calculation;
+}
+//console.log(krogerSalesNW());
+var result = krogerSalesNW();
+var cal = result + 1000;
+console.log(cal);
+var newCal = cal * 1000;
+console.log(newCal);
+
+
 //FUNCTION INPUT
 //prompt user for number1
 //prompt user for number 2
