@@ -1,0 +1,23 @@
+body{
+  background-color: inherit;
+  width: 500px;
+  margin: 4% auto;
+}
+
+.calculator{
+  box-sizing: content-box;
+  background-color: #DEB887; /*burlywood*/
+  width: 150px;
+  padding: 100px;/*length of calc*/
+  margin: inherit;
+  border-radius: 10px;
+  border-color: white;
+  border-width: thick;
+  border-style: double;
+
+}
+
+.result_screen{}
+
+
+.buttons {}

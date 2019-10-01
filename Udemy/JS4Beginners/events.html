@@ -11,7 +11,7 @@
   CLICK HERE</button>
 
   <button id="button2" type="button" name="button">CLICK</button>
-
+  <button id="button3" type="button" name="submitButton">SUBMIT ME</button>
 <script type="text/javascript">
 //how to control button2 with JavaScript
 document.getElementById('button2').onclick = function(){
@@ -22,7 +22,13 @@ function whenYouClickOnButton(){
   alert("You clicked Me!");
 }
 
+document.getElementById('button3').onmouseover = function(){
+  whenYouSubmitButton()
+};
 
+function whenYouSubmitButton(){
+  alert("You Submitted The Form");
+}
 
 
 </script>
