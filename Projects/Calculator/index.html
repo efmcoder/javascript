@@ -10,12 +10,17 @@
 
 <div class="calculator">
 
-<div class="result_screen">
-  <input type="text" name="Result" value="">
-
-</div>
+<div class="input" id="input"></div>
 
 <div class="buttons">
+
+  <div class="operators">
+        <div><button type="button" name="buttonplus">+</button></div>
+        <div><button type="button" name="buttonminus">-</button></div>
+        <div><button type="button" name="buttonproduct">*</button></div>
+        <div><button type="button" name="buttonproduct">/</button></div>
+  </div>
+
           <div class="leftPanel">
                     <div class="numbers">
                       <button type="button" name="button1">1</button>
@@ -42,17 +47,12 @@
                     </div>
           </div> <!--end of left panel-->
 
-          <div class="operators">
-                <button type="button" name="buttonplus">+</button>
-                <button type="button" name="buttonminus">-</button>
-                <button type="button" name="buttonproduct">*</button>
-                <button type="button" name="buttonequal">=</button>
+        <div class = "equal" id="result">
+        <button type="button" name="buttonequal">=</button></div>
 
           </div>
 
-
 </div>
-
 
 
 
