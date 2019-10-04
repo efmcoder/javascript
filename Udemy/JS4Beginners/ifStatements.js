@@ -1,10 +1,10 @@
-var MikeAge = 30;
-var JohnAge = 30;
+var MikeAge = 25;
+var JohnAge = 26;
 if(MikeAge === JohnAge){
-  console.log("Mike is the same age as John")
+  console.log("Mike is " + MikeAge + " and the same age as John. John is " + JohnAge)
 }else if(MikeAge > JohnAge){
-    console.log("Mike is older than John")
+    console.log("Mike is " + MikeAge + " and older than John. John is " + JohnAge)
   }
   else if(MikeAge < JohnAge){
-      console.log("Mike is younger than John")
+      console.log("Mike is " + MikeAge + " and younger than John. John is " + JohnAge)
     }

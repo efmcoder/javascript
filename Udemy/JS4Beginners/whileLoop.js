@@ -18,3 +18,12 @@ do{
   console.log(i);
   i++;
 } while(i<7);
+
+console.log("\n");
+
+//while loop to loop through things
+var array = ["Mercedes", "Volvo", "Subaru", "Toyata", "Lexus", "BMW"];
+while(i< array.length){
+  console.log(array[i]);
+  array++;
+}

@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+
 <button type="button" name="button">TESTBUTTON</button>
 <!--BLOCK OFF THESE BUTTONS FOR NOW
 <button id="button1" type="button" name="button">1</button>
@@ -14,8 +15,8 @@
 <button id="buttonequalsSign" type="button" name="button">=</button>
 -->
 
-<button onclick="add1and2()" id="oneAndTwo" type="button" name="button">ADD 1&2</button>
-<button onclick="addNumbers()" id="" type="button" name="button">ADD NUMBERS</button>
+<button id="oneAndTwo" onclick="add1and2()" type="button" name="button">ADD 1&2</button>
+<button onclick="addNumbers()" id="addingNums" type="button" name="button">ADD NUMBERS</button>
 <!--when i click on CLICKME, i'd like the answer to be displayed in the text box below-->
 <input type="text" name="result" value="">
 
@@ -27,13 +28,14 @@
       var num1 = 1000;
       var num2 = 50;
       var calculation = num1 + num2;
-      document.getElementById("").innerHTML = document.write(calculation);
+      document.getElementById("oneAndTwo").innerHTML = document.write(calculation);
       }
-    add1and2();
+    document.getElementById("oneAndTwo").innerHTML = add1and2();
 
+/*this is not working well with the getElementById*/
     function addNumbers(num1, num2){
       var calculation = num1 + num2;
-      document.write(calculation);
+      document.getElementById("addingNums").innerHTML = document.write(calculation);
       /*document.getElementById("").innerHTML; When u provide the parameter outside the scope of the function, u cannot do this*/
     }
     addNumbers(100, 100);
