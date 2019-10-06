@@ -33,6 +33,7 @@ function calculateAge(age){
   var birthYear = 1976;
   var calculateAge = birthYear + age;
   document.write(calculateAge);
+  document.write("<br>");
 }
 calculateAge(30);
 
@@ -40,9 +41,25 @@ function calcAge(bornYear){
   var this_Year = 2019;
   var calcAge = this_Year - bornYear;
   document.write(calcAge);
+  document.write("<br>");
 }
 calcAge(1984);
 
+
+function alertMessage(){
+  var message = "This is an alert!";
+  alert(message);
+
+}
+//call the FUNCTION
+alertMessage();
+
+//write above message using document.write
+function alertsMessage(){
+  var messages = "This is an alert!";
+  document.write(messages);
+}
+alertsMessage();
 
 
 </script>
