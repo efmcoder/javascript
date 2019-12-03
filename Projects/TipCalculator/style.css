@@ -1,0 +1,12 @@
+body {
+  color: blue;
+  background-color: white;
+}
+
+.form-control{
+  background-color: orange;
+}
+
+.results{
+  background-color: pink;
+}
