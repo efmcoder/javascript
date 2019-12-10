@@ -8,16 +8,19 @@
   <body>
 
 <form action="javascript:void(calc())">
-  
+
 <!---"INPUT" creates a box you can enter stuff into --->
 <!--"id" value is to identify element to be manipulated in app.js -->
-<input type="text" id="bill" type="text" placeholder="BILL">
-<button>Calculate</button>
-
+<input type="text" id="bill" placeholder="BILL">
 <p>Tip<span id="tip"></span></p> <!--id "TIP" will be used in app.js to manipulate this field -->
 
-</form>
+<!--NEW CALCULATION. WILL USE SAME CALCULATE BUTTON -->
+<input type="text" id="income" placeholder="INCOME">
+<p>Tax<span id="tax"></span></p>
 
+<button>Calculate</button>
+
+</form>
 <script type="text/javascript" src=app.js>
 
 </script>
