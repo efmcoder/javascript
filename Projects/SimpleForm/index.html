@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>form</title>
+  </head>
+  <body>
+
+  <div class="container">
+    <header>
+      <h1 id="title" class="text-center">Survey Form</h1>
+      <p id="description" class="description text-center"> Thank you for taking the time to help us improve this website</p>
+    </header>
+
+<form id="survey-form">
+
+<div class="form-group">
+<label id="name-label" for="name">Name</label>
+<input type="text" name="name" placeholder="Enter your name" required>
+</div>
+<br>
+
+<div class="form-group">
+<label id="name-label" for="name">Email Address</label>
+<input type="text" name="email address" placeholder="Email Address" required>
+</div>
+<br>
+
+<div class="form-group">
+<label id="name-label" for="name">Phone Number</label>
+<input type="text" name="phone number" placeholder="Telephone Number" required>
+</div>
+<br>
+
+<div class="form-group">
+<label id="name-label" for="name">Age</label>
+<input type="text" name="age" min="18" max="120" placeholder="Age" required>
+</div>
+<br>
+
+<div class="form-group">
+<p>Which option best describes your current role?</p>
+<select class="form-control-role-selector" name="" required>
+<option value="blank"></option>
+<option value="student">Student</option>
+<option value="job">Full Time Job</option>
+<option value="learner">Full Time Learner</option>
+<option value="preferNo">Prefer Not To Say</option>
+<option value="other">Other</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<p>Would you recommend this product to others?</p>
+<label> 1.
+  <input
+  name="user-recommend"
+  value="definitely"
+  type="radio"
+  class="input-radio"
+  checked
+  />Definitely</label>
+
+<label> 2.
+    <input
+    name="user-recommend"
+    value="maybe"
+    type="radio"
+    class="input-radio"
+    />Maybe</label>
+
+<label> 3.
+      <input
+      name="user-recommend"
+      value="not sure"
+      type="radio"
+      class="input-radio"
+      />Not Sure</label>
+</div>
+
+
+<div class="form-group">
+<p>What would you like to see improved?</p>
+
+<label> 1.
+  <input
+  name="prefer"
+  value="front-end-projects"
+  type="checkbox"
+  class="input-checkbox"
+  />Front-end Projects</label>
+</div>
+
+
+<div class="form-group">
+  <button type="submit" id="submit" class="submit-button" name="button">Submit</button>
+
+</div>
+
+
+</select>
+</form>
+</div>
+
+  </body>
+</html>

@@ -10,88 +10,39 @@
 <table>
 <div class="headers">
   <tr>
-    <th>Asset</th>
-    <th>Invoice #</th>
-    <th>Invoice Amount</th>
-    <th>Period Begin</th>
-    <th>Period End</th>
-    <th>Number of Periods</th>
-    <th>Beginning Balance</th>
-    <th>Current Expense</th>
-    <th>Ending Balance</th>
-    <th>Expensed YTD</th>
+    <th id="asset">Asset</th>
+    <th id="invoiceAmount">Invoice Amount</th>
+    <th id="beginningBalance">Beginning Balance</th>
+    <th id="invoice">Invoice #</th>
+    <th id="invoiceDate">Invoice Date</th>
+    <th id="invoiceAmountThisYear">Invoice Amount This Year</th>
+    <th id="periodBegin">Period Begin</th>
+    <th id="numberOfPeriods">Number of Periods</th>
+    <th id="periodEnd">Period End(formula)</th> <!--formula-->
+    <th id="monthlyExpense">Monthly Expense(formula)</th> <!--formula-->
   </tr>
 </div>
-
-<div class="rows">
-<tr id="insurance" alt = "insurance"><td>Insurance</td>
-<td>12345A</td>
-<td>1000</td>
-<td>1/1/2015</td>
-<td>12/31/2020</td>
-<td class="numberOfPeriods" alt = "#ofperiods"></td> <!--this should be a formula-->
-<td alt = "Beginning Balance"></td> <!--this should be a formula-->
-<td alt = "This Month Expense"></td> <!--this should be a formula-->
-<td alt = "Ending Balance"></td> <!--this should be a formula-->
-<td alt = "Expensed YTD"></td> <!--this should be a formula-->
-</tr>
-
-<tr><td>Subscriptions</td>
-  <td>23456B</td>
-  <td>1000</td>
-  <td>1/1/2015</td>
-  <td>12/31/2020</td>
-  <td alt = "#ofperiods"></td> <!--this should be a formula-->
-  <td alt = "Beginning Balance"></td> <!--this should be a formula-->
-  <td alt = "This Month Expense"></td> <!--this should be a formula-->
-  <td alt = "Ending Balance"></td> <!--this should be a formula-->
-  <td alt = "Expensed YTD"></td> <!--this should be a formula-->
-</tr>
-
-<tr><td>Rent Deposits</td>
-  <td>34567C</td>
-  <td>1000</td>
-  <td>1/1/2015</td>
-  <td>12/31/2020</td>
-  <td alt = "#ofperiods"></td> <!--this should be a formula-->
-  <td alt = "Beginning Balance"></td> <!--this should be a formula-->
-  <td alt = "This Month Expense"></td> <!--this should be a formula-->
-  <td alt = "Ending Balance"></td> <!--this should be a formula-->
-  <td alt = "Expensed YTD"></td> <!--this should be a formula-->
-
-</tr>
-<tr><td>Software Licenses</td>
-  <td>45678D</td>
-  <td>1000</td>
-  <td>1/1/2015</td>
-  <td>12/31/2020</td>
-  <td alt = "#ofperiods"></td> <!--this should be a formula-->
-  <td alt = "Beginning Balance"></td> <!--this should be a formula-->
-  <td alt = "This Month Expense"></td> <!--this should be a formula-->
-  <td alt = "Ending Balance"></td> <!--this should be a formula-->
-  <td alt = "Expensed YTD"></td> <!--this should be a formula-->
-
-</tr>
-<tr><td>Other Prepaids</td>
-  <td>56789E</td>
-  <td>1000</td>
-  <td>1/1/2015</td>
-  <td>12/31/2020</td>
-  <td alt = "#ofperiods"></td> <!--this should be a formula-->
-  <td alt = "Beginning Balance"></td> <!--this should be a formula-->
-  <td alt = "This Month Expense"></td> <!--this should be a formula-->
-  <td alt = "Ending Balance"></td> <!--this should be a formula-->
-  <td alt = "Expensed YTD"></td> <!--this should be a formula-->
-
-</tr>
-</div>
-
-
-
-
-
-
 </table>
+
+
+<div class="Asset_Type">
+  <label for="">Type Of Asset</label>
+  <select class="" name="">
+  <option value="">Insurance</option>
+  <option value="">Subscription</option>
+  <option value="">Other</option>
+  </select>
+<br>
+<br>
+
+
+<label for="Invoice_Amount">Amount of Invoice</label>
+<input type="number" name="" placeholder="Invoice Amount">
+<br>
+<br>
+
+
+
 <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

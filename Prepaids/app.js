@@ -1,1 +1,2 @@
-var numberOfPeriods = Math.abs(date1 - date2);
+var 
+var periodEnd = Math.abs(date1 - date2);

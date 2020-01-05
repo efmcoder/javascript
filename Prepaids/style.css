@@ -1,3 +1,8 @@
+#asset{
+  font-size: 25px;
+}
+
+
 table, th {
   margin: 10,10,10,10;
   border: 1px solid black;
@@ -6,15 +11,13 @@ table, th {
 
 }
 
+/*
 th{
   background-color: #0000ff;
   color: white;
 }
 
-td {
-  text-align: justify;
-}
-
 .headers{
   margin: 25px;
 }
+*/
