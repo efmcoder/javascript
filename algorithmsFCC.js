@@ -1,25 +1,30 @@
 console.log("#1: Convert Celcius to Fahrenheit");
 function convertToFahrenheit(Celcius){
-  let Fahrenheit = (Celcius*9/5)+32;
+  var Fahrenheit = (Celcius*9/5)+32;
   return Fahrenheit
 };
 console.log(convertToFahrenheit(82));
 
-console.log("learn how to write functions");
+
+console.log("#2. " + "learn how to write functions");
 
 
+console.log("#3: Find the Square of a number");
 function square(number){
   return number * number;
 };
 console.log(square(30));
 
+
+console.log("#4: Find perimeter of a rectangle");
 function rectangle(num){
-  rectangle = num + num;
+  rectangle = 2*(num + num);
   return rectangle;
 };
 console.log(rectangle(2));
 
-console.log("#2: Reverse a String");
+
+console.log("#5: Reverse a String");
 function reverseString(str){
   return str.split("").reverse().join("");
   return str;
