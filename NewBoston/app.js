@@ -42,3 +42,4 @@ var x = 25;
 do {console.log(x); 
 	x++;
 } while (x <=35);
+
