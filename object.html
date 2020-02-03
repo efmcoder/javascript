@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Own Objects</title>
+	<script type="text/javascript">
+		function person(name, age){
+			this.name = name;
+			this.age = age;
+		}
+//the above is a Constructor function. A blueprint/template u can use to create multiple objects
+
+//create a new instance of an object
+
+		var marge = new person("Marge Kioi", 21);
+		var kobe = new person("Kobe Bryant", 24);
+
+	</script>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	document.write("My cousin's name is " + marge.name + ". " + "She went to school with " + kobe.name + " when she was " + marge.age + " and he was " + kobe.age);
+
+</script>
+
+</body>
+</html>
