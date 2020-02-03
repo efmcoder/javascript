@@ -6,13 +6,29 @@
 		function person(name, age){
 			this.name = name;
 			this.age = age;
+			this.yearsToRetire = yearsLeft;
 		}
-//the above is a Constructor function. A blueprint/template u can use to create multiple objects
+//LESSON 1A. the above is a Constructor function. A blueprint/template u can use to create multiple objects
 
-//create a new instance of an object
+//LESSON 1B. create a new instance of an object
 
-		var marge = new person("Marge Kioi", 21);
-		var kobe = new person("Kobe Bryant", 24);
+		var marge = new person("Marge Simpson", 21);
+		var apu = new person("Apu Napa", 24);
+
+//LESSON 2. YOU CAN ALSO USE OBJECT INITIALIZERS
+/*
+	marge = {name:"Marge Kioi", age:21};
+	kobe = {name: "Kobe Bryant", age:24}
+
+*/
+
+//LESSON 3. ADD METHODS TO THE OBJECTS U CREATED ABOVE:
+	function yearsLeft(){
+		var numYears = 65 - this.age;
+		return numYears;
+	}
+
+
 
 	</script>
 </head>
@@ -20,7 +36,13 @@
 
 <script type="text/javascript">
 	
-	document.write("My cousin's name is " + marge.name + ". " + "She went to school with " + kobe.name + " when she was " + marge.age + " and he was " + kobe.age);
+	document.write("My cousin's name is " + marge.name + ". " + "She went to school with " + apu.name + " when she was " + marge.age + " and he was " + apu.age);
+
+	document.write("<br>");
+	document.write("<br>");
+
+	document.write("Marge has " + marge.yearsToRetire() + " years to retirement.");
+	
 
 </script>
 
