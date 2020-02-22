@@ -1,19 +1,23 @@
 //test to find a particular word in a string
+console.log("#1");
 let string1 = "freecodecamp";
 let regexStr1 = /code/;
 console.log(regexStr1.test(string1));
 
+console.log("#2");
 //testing to find more than 1 word in the string
 let string2 = "freecodecamp is available for world citizens";
 let regexStr2 = /code|citizen|is/;
 console.log(regexStr2.test(string2));
 
+console.log("#3");
 //test and ignore upper or lower case
 //you have to add i after the last / or you will get "false = can't be found"
 let string3 = "FreeCodeCamp Is Available For World CITIZENS";
 let regexStr3 = /code|citizen|is/i;
 console.log(regexStr3.test(string3));
 
+console.log("#4");
 //Extract a matching word
 //use the word "match" instead of "test"
 //Extract "citizen"
@@ -27,7 +31,7 @@ console.log(string4.match(regexStr4));
 //let result4 = string4.match(regexStr4);
 //console.log(result4);
 
-
+console.log("#5");
 //Find more than the first match
 //will find singular in the plural but not vice versa
 let string5 = "FreeCodeCamp (yeah!) Is AVAILABLE FOR WORLD CITIZENs made by citizens";
