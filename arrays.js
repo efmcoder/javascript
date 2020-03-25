@@ -33,3 +33,15 @@ Faith["zip"] = "1001";
 Faith["school"] = "Northeastern University";
 Faith["marital_status"] = "Single";
 console.log(Faith);
+
+//OTHER WAYS TO CREATE ARRAYS
+console.log("#2: OTHER WAYS TO CREATE ARRAYS: TELL THE ARRAY HOW MANY ITEMS WILL BE IN IT");
+var things = new Array(3);
+things[0] = "The New Boston";
+things[1] = "Brian Regan";
+things[2] = "Wes Bos";
+things[3] = "LeBron";
+
+console.log(things);
+console.log(things[0]);
+
