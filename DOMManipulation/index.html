@@ -1,0 +1,31 @@
+<!--
+STEPS:
+<button></button>
+
+<button>The Time Is</button>
+
+<button onclick>The Time Is</button>
+
+<button onclick=" ">The Time Is</button>
+
+<button onclick="displayDate">The Time Is</button>
+
+<button onclick="displayDate()">The Time Is</button>
+
+
+-->
+<button onclick="displayDate()">The Time Is</button>
+
+<!-- <script type="text/javascript" src = app.js></script> -->
+
+<script>
+
+function displayDate(){
+	document.getElementById("time").innerHTML = Date();
+}
+
+</script>
+
+<h1 id="time">Now</h1>
+
+
